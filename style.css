@@ -1,0 +1,109 @@
+@charset "UTF-8";
+body {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+/* Loading背景画面設定　*/
+#splash_contents {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* fadeInをする要素の動き */
+}
+#splash_contents p {
+  font-size: 20px;
+  opacity: 0;
+  -webkit-animation-name: fadeInAnime;
+          animation-name: fadeInAnime;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeInAnime {
+  0% {
+    opacity: 0;
+    color: rgb(41, 41, 41);
+  }
+  100% {
+    opacity: 1;
+    color: rgb(41, 41, 41);
+  }
+}
+
+@keyframes fadeInAnime {
+  0% {
+    opacity: 0;
+    color: rgb(41, 41, 41);
+  }
+  100% {
+    opacity: 1;
+    color: rgb(41, 41, 41);
+  }
+}
+#container {
+  width: 100%;
+  height: 100vh;
+  background: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.top_image_area {
+  position: relative;
+  width: 500px;
+  max-width: 100%;
+  height: 400px;
+}
+
+.image {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+}
+
+.message {
+  text-align: center;
+}
+
+.label {
+  font-size: 24px;
+}
+
+.host_area {
+  margin-top: 50px;
+  text-align: center;
+  line-height: 0;
+}
+.host_area img {
+  width: 100%;
+}
+
+.host {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.name {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.message {
+  line-height: 20px;
+}
+
+.countdown_area {
+  text-align: center;
+}
+
+.goal_day {
+  font-size: 18px;
+}/*# sourceMappingURL=style.css.map */
