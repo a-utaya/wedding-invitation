@@ -1,7 +1,12 @@
 @charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
+  color: rgb(50, 50, 50);
   font-size: 14px;
-  line-height: 22px;
 }
 
 /* Loading背景画面設定　*/
@@ -56,54 +61,128 @@ body {
   text-align: center;
 }
 
-.top_image_area {
-  position: relative;
-  width: 500px;
-  max-width: 100%;
-  height: 400px;
-}
-
-.image {
-  position: absolute;
+.top_image_area img {
   width: 100%;
-  opacity: 0;
-}
-
-.message {
-  text-align: center;
 }
 
 .label {
-  font-size: 24px;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.sub_label {
+  font-size: 14px;
+}
+
+.message_area {
+  text-align: center;
+  line-height: 24px;
+}
+.message_area p {
+  margin-top: 20px;
 }
 
 .host_area {
-  margin-top: 50px;
+  background-color: rgb(50, 38, 38);
+  color: #fff;
+  padding: 100px 50px;
+  margin-top: 100px;
   text-align: center;
-  line-height: 0;
+  line-height: 30px;
 }
 .host_area img {
   width: 100%;
 }
-
-.host {
+.host_area .host {
   margin-top: 20px;
   margin-bottom: 50px;
 }
-
-.name {
-  font-size: 18px;
-  line-height: 20px;
-}
-
-.message {
-  line-height: 20px;
+.host_area .name {
+  font-size: 24px;
+  margin: 10px 0px 20px;
 }
 
 .countdown_area {
+  padding: 100px 0px;
+  background-image: url("images/lalachance.jpeg");
+  background-repeat: no-repeat;
+  color: #fff;
   text-align: center;
 }
+.countdown_area .goal_day_area {
+  margin-top: 30px;
+}
+.countdown_area .to {
+  font-size: 26px;
+  padding-right: 10px;
+}
+.countdown_area .goal_day {
+  font-size: 40px;
+}
+.countdown_area .ceremony_detail {
+  margin-top: 10px;
+}
+.countdown_area .info {
+  font-size: 30px;
+}
+.countdown_area .reception {
+  font-size: 20px;
+}
+.countdown_area .timer_area {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.countdown_area .timer_item {
+  text-align: center;
+}
+.countdown_area .haveSpace {
+  margin-right: 10px;
+}
+.countdown_area .timer {
+  font-size: 50px;
+}
+.countdown_area .unit {
+  font-size: 20px;
+}
 
-.goal_day {
-  font-size: 18px;
+.access_area {
+  padding: 100px 50px;
+  text-align: center;
+}
+.access_area iframe {
+  margin: 20px 0px;
+  height: 250px;
+  width: 100%;
+}
+.access_area a {
+  color: rgb(50, 50, 50);
+  text-decoration: none;
+}
+
+.attention_area {
+  line-height: 24px;
+  padding: 100px 50px;
+  text-align: center;
+}
+.attention_area .attention p {
+  margin-top: 20px;
+}
+
+.presemce_area {
+  display: block;
+  line-height: 24px;
+  padding: 100px 50px;
+  text-align: center;
+}
+.presemce_area .form_area {
+  display: inline-block;
+  padding-top: 20px;
+  text-align: left;
+}
+.presemce_area .form_area p input {
+  text-align: left;
+}
+.presemce_area .form_item {
+  padding: 10px 0px;
 }/*# sourceMappingURL=style.css.map */
