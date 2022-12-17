@@ -169,7 +169,7 @@
       </div>
     </div>
 
-    <div class="presemce_area" id="form_area">
+    <form class="presence_area" id="form_area">
       <p class="label">PRESENCE OR
         <br>ABSENCE
       </p>
@@ -212,12 +212,39 @@
         </div>
 
         <div class="form_item">
-          <p class="form_label">住所</p>
+          <p class="form_label">ご住所</p>
           <input type="text" id="address" name="address" required>
         </div>
-      </div>
-    </div>
 
+        <p class="form_label">メールアドレス</p>
+        <input type="email" id="email" name="email" required>
+
+        <p class="form_label">メッセージ</p>
+        <!-- <span>新郎新婦にメッセージを送ることができます</span> -->
+        <textarea name="guest[message]" class="textarea" maxlength="250" cols="30" rows="10"></textarea>
+
+        <p class="form_label">アレルギー</p>
+        <!-- <span class="form-Main_ValueNote" style="color:red;">アレルギーをお持ちの方のみご記入ください</span> -->
+        <input type="text" id="guest_memo_allergy" name="guest[memo_allergy]">
+
+        <div>
+          <p class="form_label">お連れ様追加</p>
+          <div class="form-Main_Value" id="l_family_member_form">
+            <input type="hidden" name="family_members[][id]" value="" />
+            <input type="text" name="family_members[][joint_name]" value="" />
+            <input type="text" name="family_members[][memo_allergy]" value="" />
+            <br />
+            <br />
+            <input type="button" value="お連れ様を追加する" id="l_add_family_member_button" />
+          </div>
+        </div>
+      </div>
+      <div>
+        <button type="submit" id="send">送信する</button>
+      </div>
+
+
+    </form>
   </main>
 
 

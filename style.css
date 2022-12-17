@@ -169,20 +169,18 @@ body {
   margin-top: 20px;
 }
 
-.presemce_area {
-  display: block;
+.presence_area {
   line-height: 24px;
   padding: 100px 50px;
   text-align: center;
 }
-.presemce_area .form_area {
-  display: inline-block;
+.presence_area .form_area {
   padding-top: 20px;
   text-align: left;
 }
-.presemce_area .form_area p input {
+.presence_area .form_area p input {
   text-align: left;
 }
-.presemce_area .form_item {
+.presence_area .form_item {
   padding: 10px 0px;
 }/*# sourceMappingURL=style.css.map */
