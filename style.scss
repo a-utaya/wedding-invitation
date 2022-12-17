@@ -168,13 +168,22 @@ body {
 }
 
 .access_area {
-  padding: 100px 50px;
+  padding: 100px 0px;
   text-align: center;
 
-  iframe {
+
+  // GoogleMapの左上の吹き出しを隠すために、
+  // .map（実際に表示させる高さ）とiframeのheightをわざと相違させる
+  .map {
+    height: 300px;
     margin: 20px 0px;
-    height: 250px;
-    width: 100%;
+    overflow: hidden;
+
+    iframe {
+      height: 700px;
+      width: 100%;
+      margin-top: -180px;
+    }
   }
 
   a {

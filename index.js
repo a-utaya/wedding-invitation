@@ -35,6 +35,7 @@ for (const [key, value] of Object.entries(images)) {
 
 }
 
+// カウントダウン
 let countdown = setInterval(function () {
   const now = new Date()  //今の日時
   const target = new Date("2023/3/11 10:00:00")
