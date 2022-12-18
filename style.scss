@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Klee One');
+
 * {
   margin: 0px;
   padding: 0px;
@@ -6,89 +8,49 @@
 body {
   color: rgb(50, 50, 50);
   font-size: 14px;
-}
-
-/* Loading背景画面設定　*/
-// #splash {
-//   /*fixedで全面に固定*/
-//   position: fixed;
-//   width: 100%;
-//   height: 100%;
-//   z-index: 999;
-//   background: #ccc;
-//   text-align: center;
-// }
-
-// /* 中央配置　*/
-#splash_contents {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  /* fadeInをする要素の動き */
-  p {
-    font-size: 20px;
-    opacity: 0;
-    animation-name: fadeInAnime;
-    animation-duration: 5s;
-    animation-iteration-count: 2;
-    animation-fill-mode: forwards;
-  }
-}
-
-@keyframes fadeInAnime {
-  0% {
-    opacity: 0;
-    color: rgb(41, 41, 41);
-  }
-
-  100% {
-    opacity: 1;
-    color: rgb(41, 41, 41);
-  }
+  // font-family: sans-serif;
+  font-family: 'Klee One';
 }
 
 
 .top_image_area {
-
-  // position: relative;
-  // width: 500px;
-  // max-width: 100%;
-  // height: 400px;
   img {
     width: 100%;
   }
 }
 
 .label {
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 40px;
+  font-family: Courier New;
+  line-height: 36px;
 }
 
 .sub_label {
   font-size: 14px;
+  font-family: cursive;
+  margin: 0px 0px 20px;
 }
 
 .message_area {
+  font-family: 'Klee One';
+  line-height: 22px;
+  padding: 100px 0px;
   text-align: center;
-  line-height: 24px;
 
   p {
-    margin-top: 20px;
+    margin-bottom: 18px;
   }
 }
 
 .host_area {
   background-color: rgb(50, 38, 38);
   color: #fff;
-  padding: 100px 50px;
-  margin-top: 100px;
+  padding: 100px 0px;
   text-align: center;
   line-height: 30px;
 
   img {
-    width: 100%;
+    width: 20em;
   }
 
   .host {
@@ -104,27 +66,24 @@ body {
 
 
 .countdown_area {
-  padding: 100px 0px;
   background-image: url("images/lalachance.jpeg");
   background-repeat: no-repeat;
   color: #fff;
+  padding: 100px 20px;
   text-align: center;
-
-  .goal_day_area {
-    margin-top: 30px;
-  }
+  line-height: 30px;
 
   .to {
     font-size: 26px;
-    padding-right: 10px;
   }
 
   .goal_day {
     font-size: 40px;
+    margin: 0px 6px 0px 10px;
   }
 
   .ceremony_detail {
-    margin-top: 10px;
+    margin-top: 16px;
   }
 
   .info {
@@ -138,23 +97,21 @@ body {
   .timer_area {
     padding-top: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .timer_item {
     text-align: center;
   }
 
-  .haveSpace {
-    margin-right: 10px;
-  }
-
   .timer {
     font-size: 50px;
+    margin-bottom: 10px;
   }
 
   .unit {
     font-size: 20px;
+    font-family: monospace;
   }
 }
 
@@ -167,7 +124,8 @@ body {
   // .map（実際に表示させる高さ）とiframeのheightをわざと相違させる
   .map {
     height: 300px;
-    margin: 20px 0px;
+    margin-bottom: 20px;
+    ;
     overflow: hidden;
 
     iframe {
@@ -177,8 +135,12 @@ body {
     }
   }
 
+  .place {
+    font-size: 18px;
+  }
+
   a {
-    color: rgb(50, 50, 50);
+    color: rgb(255, 40, 115);
     text-decoration: none;
   }
 }
@@ -187,13 +149,6 @@ body {
   line-height: 24px;
   padding: 100px 50px;
   text-align: center;
-
-  .attention {
-
-    p {
-      margin-top: 20px;
-    }
-  }
 }
 
 
