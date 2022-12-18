@@ -51,18 +51,10 @@ body {
     color: rgb(41, 41, 41);
   }
 }
-#container {
-  width: 100%;
-  height: 100vh;
-  background: #ccc;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
 .top_image_area img {
   width: 100%;
+}
+
 }
 
 .label {
@@ -147,13 +139,18 @@ body {
 }
 
 .access_area {
-  padding: 100px 50px;
+  padding: 100px 0px;
   text-align: center;
 }
-.access_area iframe {
+.access_area .map {
+  height: 300px;
   margin: 20px 0px;
-  height: 250px;
+  overflow: hidden;
+}
+.access_area .map iframe {
+  height: 700px;
   width: 100%;
+  margin-top: -180px;
 }
 .access_area a {
   color: rgb(50, 50, 50);
