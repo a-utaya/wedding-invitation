@@ -29,3 +29,18 @@ let countdown = setInterval(function () {
   if (remainTime < 0) clearInterval(countdown)
 
 }, 1000)    //1秒間に1度処理
+
+//scrollしたらフェードアップ
+$(window).scroll(function () {
+  var scrollAnimationElm = document.querySelectorAll('.scroll_up_title, .scroll_up, .scroll_up_text');
+  var scrollAnimationFunc = function () {
+    for (var i = 0; i < scrollAnimationElm.length; i++) {
+      var triggerMargin = 100;
+      if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
+        scrollAnimationElm[i].classList.add('on');
+      }
+    }
+  }
+  window.addEventListener('load', scrollAnimationFunc);
+  window.addEventListener('scroll', scrollAnimationFunc);
+});
