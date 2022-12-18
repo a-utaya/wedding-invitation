@@ -10,6 +10,11 @@ body {
   font-family: "Klee One";
 }
 
+@media screen and (min-width: 480px) {
+  body {
+    font-size: 20px;
+  }
+}
 .top_image_area img {
   width: 100%;
 }
@@ -23,9 +28,19 @@ body {
 .sub_label {
   font-size: 14px;
   font-family: cursive;
-  margin: 0px 0px 20px;
+  margin-bottom: 20px;
 }
 
+@media screen and (min-width: 480px) {
+  .label {
+    font-size: 50px;
+    line-height: 46px;
+  }
+  .sub_label {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+}
 .message_area {
   font-family: "Klee One";
   line-height: 22px;
@@ -39,22 +54,35 @@ body {
 .host_area {
   background-color: rgb(50, 38, 38);
   color: #fff;
-  padding: 100px 0px;
+  padding: 100px 20px;
   text-align: center;
   line-height: 30px;
 }
 .host_area img {
-  width: 20em;
+  width: 90%;
 }
 .host_area .host {
-  margin-top: 20px;
-  margin-bottom: 50px;
+  margin: 20px 0px 50px;
 }
-.host_area .name {
+.host_area .host .name {
   font-size: 24px;
   margin: 10px 0px 20px;
 }
 
+@media screen and (min-width: 480px) {
+  .host_area {
+    padding: 100px 50px;
+    line-height: 40px;
+  }
+  .host_area .hosts {
+    display: flex;
+    justify-content: center;
+  }
+  .host_area .hosts .name {
+    font-size: 36px;
+    margin: 16px 0px 30px;
+  }
+}
 .countdown_area {
   background-image: url("images/lalachance.jpeg");
   background-repeat: no-repeat;
@@ -96,6 +124,48 @@ body {
   font-family: monospace;
 }
 
+@media screen and (min-width: 480px) {
+  .countdown_area {
+    background-image: url("images/countdown_bg.jpeg");
+    background-repeat: no-repeat;
+    padding: 100px 50px;
+    line-height: 50px;
+  }
+  .countdown_area .to {
+    font-size: 32px;
+  }
+  .countdown_area .goal_day {
+    font-size: 50px;
+    margin: 0px 6px 0px 10px;
+  }
+  .countdown_area .ceremony_detail {
+    margin-top: 40px;
+  }
+  .countdown_area .info {
+    font-size: 40px;
+  }
+  .countdown_area .reception {
+    font-size: 28px;
+  }
+  .countdown_area .timer_area {
+    padding: 40px 0px 0px 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .countdown_area .timer_area .timer_item {
+    margin-right: 30px;
+    text-align: center;
+  }
+  .countdown_area .timer_area .timer_item .timer {
+    font-size: 60px;
+    margin-bottom: 10px;
+  }
+  .countdown_area .timer_area .timer_item .unit {
+    font-size: 20px;
+    font-family: monospace;
+  }
+}
 .access_area {
   padding: 100px 0px;
   text-align: center;
@@ -118,12 +188,26 @@ body {
   text-decoration: none;
 }
 
+@media screen and (min-width: 480px) {
+  .access_area .map {
+    height: 500px;
+  }
+  .access_area .map iframe {
+    height: 1000px;
+    margin-top: -180px;
+  }
+}
 .attention_area {
   line-height: 24px;
   padding: 100px 50px;
   text-align: center;
 }
 
+@media screen and (min-width: 480px) {
+  .attention_area {
+    line-height: 40px;
+  }
+}
 .presence_area {
   line-height: 24px;
   padding: 100px 50px;
@@ -138,4 +222,54 @@ body {
 }
 .presence_area .form_item {
   padding: 10px 0px;
+}
+
+@media screen and (min-width: 480px) {
+  .presence_area {
+    line-height: 40px;
+    padding: 100px 50px;
+  }
+  .presence_area .form_area_wrapper {
+    text-align: center;
+    display: block;
+  }
+  .presence_area .form_area_wrapper .form_area {
+    padding-top: 20px;
+    display: inline-block;
+  }
+  .presence_area .form_area_wrapper .form_area .form_item {
+    display: flex;
+    padding: 10px 0px;
+  }
+  .presence_area .form_area_wrapper .form_area .form_item p {
+    width: 200px;
+  }
+  .presence_area .form_area_wrapper .form_area .form_item #firstName {
+    width: 100px;
+  }
+  .presence_area .form_area_wrapper .form_area .form_item #firstNameKana {
+    width: 100px;
+  }
+  .presence_area .form_area_wrapper .form_area .form_item #lastName {
+    width: 100px;
+  }
+  .presence_area .form_area_wrapper .form_area .form_item #lastNameKana {
+    width: 100px;
+  }
+  .presence_area .form_area_wrapper .form_area .form_item #tel {
+    width: 200px;
+  }
+  .presence_area .form_area_wrapper .form_area .form_item #address {
+    width: 400px;
+  }
+  .presence_area .form_area_wrapper .form_area .form_item #email {
+    width: 300px;
+  }
+  .presence_area .form_area_wrapper .form_area .form_item textarea {
+    width: 400px;
+    height: 200px;
+  }
+  .presence_area .form_area_wrapper .form_area .form_item #guest_memo_allergy {
+    width: 400px;
+  }
 }/*# sourceMappingURL=style.css.map */

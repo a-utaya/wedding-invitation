@@ -8,8 +8,13 @@
 body {
   color: rgb(50, 50, 50);
   font-size: 14px;
-  // font-family: sans-serif;
   font-family: 'Klee One';
+}
+
+@media screen and (min-width:480px) {
+  body {
+    font-size: 20px;
+  }
 }
 
 
@@ -28,7 +33,19 @@ body {
 .sub_label {
   font-size: 14px;
   font-family: cursive;
-  margin: 0px 0px 20px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width:480px) {
+  .label {
+    font-size: 50px;
+    line-height: 46px;
+  }
+
+  .sub_label {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
 }
 
 .message_area {
@@ -45,22 +62,39 @@ body {
 .host_area {
   background-color: rgb(50, 38, 38);
   color: #fff;
-  padding: 100px 0px;
+  padding: 100px 20px;
   text-align: center;
   line-height: 30px;
 
   img {
-    width: 20em;
+    width: 90%;
   }
 
   .host {
-    margin-top: 20px;
-    margin-bottom: 50px;
-  }
+    margin: 20px 0px 50px;
 
-  .name {
-    font-size: 24px;
-    margin: 10px 0px 20px;
+    .name {
+      font-size: 24px;
+      margin: 10px 0px 20px;
+    }
+  }
+}
+
+@media screen and (min-width:480px) {
+  .host_area {
+    padding: 100px 50px;
+    line-height: 40px;
+
+    .hosts {
+      display: flex;
+      justify-content: center;
+
+
+      .name {
+        font-size: 36px;
+        margin: 16px 0px 30px;
+      }
+    }
   }
 }
 
@@ -115,10 +149,63 @@ body {
   }
 }
 
+@media screen and (min-width:480px) {
+  .countdown_area {
+    background-image: url("images/countdown_bg.jpeg");
+    background-repeat: no-repeat;
+    padding: 100px 50px;
+    line-height: 50px;
+
+    .to {
+      font-size: 32px;
+    }
+
+    .goal_day {
+      font-size: 50px;
+      margin: 0px 6px 0px 10px;
+    }
+
+    .ceremony_detail {
+      margin-top: 40px;
+    }
+
+    .info {
+      font-size: 40px;
+    }
+
+    .reception {
+      font-size: 28px;
+    }
+
+    .timer_area {
+      padding: 40px 0px 0px 30px;
+      text-align: center;
+
+      display: flex;
+      justify-content: center;
+
+      .timer_item {
+        margin-right: 30px;
+        text-align: center;
+
+        .timer {
+          font-size: 60px;
+          margin-bottom: 10px;
+        }
+
+        .unit {
+          font-size: 20px;
+          font-family: monospace;
+        }
+      }
+    }
+
+  }
+}
+
 .access_area {
   padding: 100px 0px;
   text-align: center;
-
 
   // GoogleMapの左上の吹き出しを隠すために、
   // .map（実際に表示させる高さ）とiframeのheightをわざと相違させる
@@ -145,10 +232,29 @@ body {
   }
 }
 
+@media screen and (min-width:480px) {
+  .access_area {
+    .map {
+      height: 500px;
+
+      iframe {
+        height: 1000px;
+        margin-top: -180px;
+      }
+    }
+  }
+}
+
 .attention_area {
   line-height: 24px;
   padding: 100px 50px;
   text-align: center;
+}
+
+@media screen and (min-width:480px) {
+  .attention_area {
+    line-height: 40px;
+  }
 }
 
 
@@ -168,5 +274,70 @@ body {
 
   .form_item {
     padding: 10px 0px;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .presence_area {
+    line-height: 40px;
+    padding: 100px 50px;
+
+    .form_area_wrapper {
+      text-align: center;
+      display: block;
+
+      .form_area {
+        padding-top: 20px;
+        display: inline-block;
+
+        .form_item {
+          display: flex;
+          padding: 10px 0px;
+
+          p {
+            width: 200px;
+          }
+
+          #firstName {
+            width: 100px;
+          }
+
+          #firstNameKana {
+            width: 100px;
+          }
+
+          #lastName {
+            width: 100px;
+          }
+
+          #lastNameKana {
+            width: 100px;
+          }
+
+          #tel {
+            width: 200px;
+          }
+
+          #address {
+            width: 400px;
+          }
+
+          #email {
+            width: 300px;
+          }
+
+          textarea {
+            width: 400px;
+            height: 200px;
+          }
+
+          #guest_memo_allergy {
+            width: 400px;
+          }
+        }
+      }
+
+    }
+
   }
 }

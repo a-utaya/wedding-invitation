@@ -47,32 +47,36 @@
       </p>
     </div>
 
+
     <div class="host_area">
       <p class="label">HOST</p>
       <p class="sub_label">Thank you for always supporting us...</p>
-      <div class="host">
-        <img src="images/99425096_551063462507507_3131830224564518912_n.jpeg" border="6">
-        <p>Groom</p>
-        <p class="name">中村　幹</p>
-        <p>メッセージメッセージメッセージメッセージ
-          <br>メッセージメッセージメッセージメッセージ
-        </p>
-      </div>
+      <div class="hosts">
+        <div class="host">
+          <img src="images/99425096_551063462507507_3131830224564518912_n.jpeg" border="6">
+          <p>Groom</p>
+          <p class="name">中村　幹</p>
+          <p>メッセージメッセージメッセージメッセージ
+            <br>メッセージメッセージメッセージメッセージ
+          </p>
+        </div>
 
-      <div class="host">
-        <img src="images/62543818_316901675880983_4049235900415082496_n.jpg" border="6">
-        <p>Bride</p>
-        <p class="name">歌谷　梓</p>
-        <p class="message">幹さんと出会い
-          <br>それまでの長男との2人の生活が
-          <br>さらに彩り豊かになりました
-          <br>いつも支えてくださるみなさんのおかげで
-          <br>結婚式もおこなうことができ
-          <br>とても幸せです
-          <br>ありがとうございます
-        </p>
+        <div class="host">
+          <img src="images/62543818_316901675880983_4049235900415082496_n.jpg" border="6">
+          <p>Bride</p>
+          <p class="name">歌谷　梓</p>
+          <p class="message">幹さんと出会い
+            <br>それまでの長男との2人の生活が
+            <br>さらに彩り豊かになりました
+            <br>いつも支えてくださるみなさんのおかげで
+            <br>結婚式もおこなうことができ
+            <br>とても幸せです
+            <br>ありがとうございます
+          </p>
+        </div>
       </div>
     </div>
+
 
     <div class="countdown_area">
       <p class="label">INFORMATION</p>
@@ -117,6 +121,7 @@
       </div>
     </div>
 
+
     <div class="access_area">
       <p class="label">ACCESS</p>
       <p class="sub_label">Please come with care</p>
@@ -133,6 +138,7 @@
       <p><a href="tel:0120-777-355">0120-777-355</a></p>
       <a href="https://www.ikk-wed.jp/hakatanomori/">https://www.ikk-wed.jp/hakatanomori/</a>
     </div>
+
 
     <div class="attention_area">
       <p class="label">MESSAGE</p>
@@ -164,6 +170,7 @@
       </div>
     </div>
 
+
     <form class="presence_area" id="form_area">
       <p class="label">PRESENCE OR
         <br>ABSENCE
@@ -178,74 +185,106 @@
         <br>御一報いただけますと幸いです
       </div>
 
-      <div class="form_area">
-        <div class="form_item">
-          <p class="form_label">ゲストタイプ</p>
-          <input type="radio" name="type" value="bridegroom" checked> 新郎側
-          &emsp;&emsp;<input type="radio" name="type" value="bride"> 新婦側
-        </div>
-
-        <div class="form_item">
-          <p class="form_label">お名前</p>
-          <input type="text" id="secondName" name="name" required minlength="4" maxlength="8" size="10">
-          &emsp;<input type="text" id="firstName" name="name" required minlength="4" maxlength="8" size="10">
-        </div>
-
-        <div class="form_item">
-          <p class="form_label">フリガナ</p>
-          <input type="text" id="secondNameKana" name="kana" required minlength="4" maxlength="8" size="10">
-          &emsp;<input type="text" id="firstNameKana" name="kana" required minlength="4" maxlength="8" size="10">
-        </div>
-
-        <div class="form_item">
-          <p class="form_label">性別</p>
-          <input type="radio" name="gender" value="male" checked> 男性
-          &emsp;<input type="radio" name="gender" value="female"> 女性
-        </div>
-
-        <div class="form_item">
-          <p class="form_label">電話番号</p>
-          <input type="tel" id="tel" name="tel" required>
-        </div>
-
-        <div class="form_item">
-          <p class="form_label">郵便番号</p>
-          <input type="text" id="" name="postalCode" required minlength="4" maxlength="8" size="10">
-          &emsp;<input type="text" id="" name="postalCode" required minlength="4" maxlength="8" size="10">
-        </div>
-
-        <div class="form_item">
-          <p class="form_label">ご住所</p>
-          <input type="text" id="address" name="address" required>
-        </div>
-
-        <p class="form_label">メールアドレス</p>
-        <input type="email" id="email" name="email" required>
-
-        <p class="form_label">メッセージ</p>
-        <!-- <span>新郎新婦にメッセージを送ることができます</span> -->
-        <textarea name="guest[message]" class="textarea" maxlength="250" cols="30" rows="10"></textarea>
-
-        <p class="form_label">アレルギー</p>
-        <!-- <span class="form-Main_ValueNote" style="color:red;">アレルギーをお持ちの方のみご記入ください</span> -->
-        <input type="text" id="guest_memo_allergy" name="guest[memo_allergy]">
-
-        <div>
-          <p class="form_label">お連れ様追加</p>
-          <div class="form-Main_Value" id="l_family_member_form">
-            <input type="hidden" name="family_members[][id]" value="" />
-            <input type="text" name="family_members[][joint_name]" value="" />
-            <input type="text" name="family_members[][memo_allergy]" value="" />
-            <br />
-            <br />
-            <input type="button" value="お連れ様を追加する" id="l_add_family_member_button" />
+      <div class="form_area_wrapper">
+        <div class="form_area">
+          <div>
+            <div class="form_item">
+              <p>ゲストタイプ</p>
+              <input type="radio" name="type" value="bridegroom" checked> 新郎側
+              &emsp;&emsp;<input type="radio" name="type" value="bride"> 新婦側
+            </div>
           </div>
+
+          <div>
+            <div class="form_item">
+              <p>お名前</p>
+              <input type="text" id="lastName" name="name" required placeholder="歌谷" minlength="1" size="10">
+              &emsp;<input type="text" id="firstName" name="name" required placeholder="凛太" minlength="1" size="10">
+            </div>
+          </div>
+
+          <div>
+            <div class="form_item">
+              <p>フリガナ</p>
+              <input type="text" id="lastNameKana" name="kana" required placeholder="ウタヤ" minlength="4" maxlength="8"
+                size="10">
+              &emsp;<input type="text" id="firstNameKana" name="kana" required placeholder="リンタ" minlength="4"
+                maxlength="8" size="10">
+            </div>
+          </div>
+
+          <div>
+            <div class="form_item">
+              <p>性別</p>
+              <input type="radio" name="gender" value="male" checked> 男性
+              &emsp;<input type="radio" name="gender" value="female"> 女性
+            </div>
+          </div>
+
+          <div>
+            <div class="form_item">
+              <p>電話番号</p>
+              <input type="tel" id="tel" name="tel" required placeholder="ハイフン無しでご入力ください">
+            </div>
+          </div>
+
+          <div>
+            <div class="form_item">
+              <p>郵便番号</p>
+              <input type="text" id="" name="postalCode" required placeholder="♡♡♡" minlength="3" size="10">
+              ー<input type="text" id="" name="postalCode" required placeholder="♡♡♡♡" minlength="4" size="10">
+            </div>
+          </div>
+
+          <div>
+            <div class="form_item">
+              <p>ご住所</p>
+              <input type="text" id="address" name="address" required placeholder="♡♡県♡♡市♡♡区♡♡00-0　（マンション名など）">
+            </div>
+          </div>
+
+          <div>
+            <div class="form_item">
+              <p>メールアドレス</p>
+              <input type="email" id="email" name="email" required placeholder="♡♡♡♡@.com">
+            </div>
+          </div>
+
+          <div>
+            <div class="form_item">
+              <p>メッセージ</p>
+              <!-- <span>新郎新婦にメッセージを送ることができます</span> -->
+              <textarea name="guest[message]"></textarea>
+
+            </div>
+          </div>
+
+          <div>
+            <div class="form_item">
+              <p>アレルギー</p>
+              <!-- <span class="form-Main_ValueNote" style="color:red;">アレルギーをお持ちの方のみご記入ください</span> -->
+              <input type="text" id="guest_memo_allergy" name="guest[memo_allergy]">
+            </div>
+          </div>
+
+          <div>
+            <div class="form_item">
+              <p>お連れ様追加</p>
+              <div class="form-Main_Value" id="l_family_member_form">
+                <input type="hidden" name="family_members[][id]" value="" />
+                <input type="text" name="family_members[][joint_name]" value="" />
+                <input type="text" name="family_members[][memo_allergy]" value="" />
+                <input type="button" value="お連れ様を追加する" id="l_add_family_member_button" />
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
+
       <div>
         <button type="submit" id="send">送信する</button>
       </div>
-
 
     </form>
   </main>
