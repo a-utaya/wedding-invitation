@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Klee One");
 * {
   margin: 0px;
   padding: 0px;
@@ -7,83 +7,44 @@
 body {
   color: rgb(50, 50, 50);
   font-size: 14px;
+  font-family: "Klee One";
 }
 
-/* Loading背景画面設定　*/
-#splash_contents {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /* fadeInをする要素の動き */
-}
-#splash_contents p {
-  font-size: 20px;
-  opacity: 0;
-  -webkit-animation-name: fadeInAnime;
-          animation-name: fadeInAnime;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-iteration-count: 2;
-          animation-iteration-count: 2;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes fadeInAnime {
-  0% {
-    opacity: 0;
-    color: rgb(41, 41, 41);
-  }
-  100% {
-    opacity: 1;
-    color: rgb(41, 41, 41);
-  }
-}
-
-@keyframes fadeInAnime {
-  0% {
-    opacity: 0;
-    color: rgb(41, 41, 41);
-  }
-  100% {
-    opacity: 1;
-    color: rgb(41, 41, 41);
-  }
-}
 .top_image_area img {
   width: 100%;
 }
 
-}
-
 .label {
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 40px;
+  font-family: Courier New;
+  line-height: 36px;
 }
 
 .sub_label {
   font-size: 14px;
+  font-family: cursive;
+  margin: 0px 0px 20px;
 }
 
 .message_area {
+  font-family: "Klee One";
+  line-height: 22px;
+  padding: 100px 0px;
   text-align: center;
-  line-height: 24px;
 }
 .message_area p {
-  margin-top: 20px;
+  margin-bottom: 18px;
 }
 
 .host_area {
   background-color: rgb(50, 38, 38);
   color: #fff;
-  padding: 100px 50px;
-  margin-top: 100px;
+  padding: 100px 0px;
   text-align: center;
   line-height: 30px;
 }
 .host_area img {
-  width: 100%;
+  width: 20em;
 }
 .host_area .host {
   margin-top: 20px;
@@ -95,24 +56,22 @@ body {
 }
 
 .countdown_area {
-  padding: 100px 0px;
   background-image: url("images/lalachance.jpeg");
   background-repeat: no-repeat;
   color: #fff;
+  padding: 100px 20px;
   text-align: center;
-}
-.countdown_area .goal_day_area {
-  margin-top: 30px;
+  line-height: 30px;
 }
 .countdown_area .to {
   font-size: 26px;
-  padding-right: 10px;
 }
 .countdown_area .goal_day {
   font-size: 40px;
+  margin: 0px 6px 0px 10px;
 }
 .countdown_area .ceremony_detail {
-  margin-top: 10px;
+  margin-top: 16px;
 }
 .countdown_area .info {
   font-size: 30px;
@@ -123,19 +82,18 @@ body {
 .countdown_area .timer_area {
   padding-top: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 .countdown_area .timer_item {
   text-align: center;
 }
-.countdown_area .haveSpace {
-  margin-right: 10px;
-}
 .countdown_area .timer {
   font-size: 50px;
+  margin-bottom: 10px;
 }
 .countdown_area .unit {
   font-size: 20px;
+  font-family: monospace;
 }
 
 .access_area {
@@ -144,7 +102,7 @@ body {
 }
 .access_area .map {
   height: 300px;
-  margin: 20px 0px;
+  margin-bottom: 20px;
   overflow: hidden;
 }
 .access_area .map iframe {
@@ -152,8 +110,11 @@ body {
   width: 100%;
   margin-top: -180px;
 }
+.access_area .place {
+  font-size: 18px;
+}
 .access_area a {
-  color: rgb(50, 50, 50);
+  color: rgb(255, 40, 115);
   text-decoration: none;
 }
 
@@ -161,9 +122,6 @@ body {
   line-height: 24px;
   padding: 100px 50px;
   text-align: center;
-}
-.attention_area .attention p {
-  margin-top: 20px;
 }
 
 .presence_area {
