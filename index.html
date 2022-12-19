@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="index.js" async></script>
   <title>幹♡梓 WEDDING招待状</title>
 </head>
@@ -16,7 +18,7 @@
       <img class="top_image" src="images/family.png">
     </div>
 
-    <div class="message_area">
+    <div class="message_area  scroll_up_text">
       <p>拝啓</p>
 
       <p>皆様におかれましては
@@ -49,102 +51,128 @@
 
 
     <div class="host_area">
-      <p class="label">HOST</p>
-      <p class="sub_label">Thank you for always supporting us...</p>
+      <div class="scroll_up_title">
+        <p class="label">HOST</p>
+        <p class="sub_label">Thank you for always supporting us...</p>
+      </div>
       <div class="hosts">
         <div class="host">
-          <img src="images/99425096_551063462507507_3131830224564518912_n.jpeg" border="6">
-          <p>Groom</p>
-          <p class="name">中村　幹</p>
-          <p>メッセージメッセージメッセージメッセージ
-            <br>メッセージメッセージメッセージメッセージ
-          </p>
+          <div class="scroll_up">
+            <img src="images/99425096_551063462507507_3131830224564518912_n.jpeg" border="6">
+          </div>
+          <div class="scroll_up">
+            <p>Groom</p>
+            <p class="name">中村　幹</p>
+            <p>メッセージメッセージメッセージメッセージ
+              <br>メッセージメッセージメッセージメッセージ
+            </p>
+          </div>
         </div>
 
         <div class="host">
-          <img src="images/62543818_316901675880983_4049235900415082496_n.jpg" border="6">
-          <p>Bride</p>
-          <p class="name">歌谷　梓</p>
-          <p class="message">幹さんと出会い
-            <br>それまでの長男との2人の生活が
-            <br>さらに彩り豊かになりました
-            <br>いつも支えてくださるみなさんのおかげで
-            <br>結婚式もおこなうことができ
-            <br>とても幸せです
-            <br>ありがとうございます
-          </p>
+          <div class="scroll_up">
+            <img src="images/62543818_316901675880983_4049235900415082496_n.jpg" border="6">
+          </div>
+          <div class="scroll_up">
+            <p>Bride</p>
+            <p class="name">歌谷　梓</p>
+            <p class="message">幹さんと出会い
+              <br>それまでの長男との2人の生活が
+              <br>さらに彩り豊かになりました
+              <br>いつも支えてくださるみなさんのおかげで
+              <br>結婚式もおこなうことができ
+              <br>とても幸せです
+              <br>ありがとうございます
+            </p>
+          </div>
         </div>
       </div>
     </div>
 
 
     <div class="countdown_area">
-      <p class="label">INFORMATION</p>
-      <p class="sub_label">Look forward to the day...</p>
+      <div class="scroll_up_title">
+        <p class="label">INFORMATION</p>
+        <p class="sub_label">Look forward to the day...</p>
+      </div>
 
       <div class="goal_day_area">
-        <span class="to">to</span>
-        <span class="goal_day">2023.3.11</span>
-        <span class="to">sat</span>
-
-        <div class="ceremony_detail">
-          <p class="info">挙式 10:00-</p>
-          <p class="reception">受付/9:30</p>
+        <div class="scroll_up">
+          <span class="to">to</span>
+          <span class="goal_day">2023.3.11</span>
+          <span class="to">sat</span>
         </div>
 
-        <div class="ceremony_detail">
-          <p class="info">披露宴 11:00-</p>
-          <p class="reception">受付/10:30</p>
+        <div class="scroll_up">
+          <div class="ceremony_detail">
+            <p class="info">挙式 10:00-</p>
+            <p class="reception">受付/9:30</p>
+          </div>
+        </div>
+
+        <div class="scroll_up">
+          <div class="ceremony_detail">
+            <p class="info">披露宴 11:00-</p>
+            <p class="reception">受付/10:30</p>
+          </div>
         </div>
       </div>
 
-      <div class="timer_area">
-        <div class="timer_item">
-          <p class="timer" id="day"></p>
-          <p class="unit">DAYS</p>
-        </div>
+      <div class="scroll_up">
+        <div class="timer_area">
+          <div class="timer_item">
+            <p class="timer" id="day"></p>
+            <p class="unit">DAYS</p>
+          </div>
 
-        <div class="timer_item">
-          <p class="timer" id="hour"></p>
-          <p class="unit">HOURS</p>
-        </div>
+          <div class="timer_item">
+            <p class="timer" id="hour"></p>
+            <p class="unit">HOURS</p>
+          </div>
 
-        <div class="timer_item">
-          <p class="timer" id="min"></p>
-          <p class="unit">MINUTES</p>
-        </div>
+          <div class="timer_item">
+            <p class="timer" id="min"></p>
+            <p class="unit">MINUTES</p>
+          </div>
 
-        <div class="timer_item">
-          <p class="timer" id="sec"></p>
-          <p class="unit">SECONDS</p>
+          <div class="timer_item">
+            <p class="timer" id="sec"></p>
+            <p class="unit">SECONDS</p>
+          </div>
         </div>
       </div>
     </div>
 
 
     <div class="access_area">
-      <p class="label">ACCESS</p>
-      <p class="sub_label">Please come with care</p>
+      <div class="scroll_up_title">
+        <p class="label">ACCESS</p>
+        <p class="sub_label">Please come with care</p>
+      </div>
 
-      <div class="map">
+      <div class="map scroll_up">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.770194070371!2d130.4669390275564!3d33.585315488035405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35419000866de935%3A0x497313891e02366e!2z44CSODEyLTA4NTQg56aP5bKh55yM56aP5bKh5biC5Y2a5aSa5Yy65p2x5pyI6ZqI77yT5LiB55uu77yS77yX4oiS77ySIOODqeODqeOCt-ODo-ODs-OCueWNmuWkmuOBruajrg!5e0!3m2!1sja!2sjp!4v1670658253401!5m2!1sja!2sjp"
           loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0">
         </iframe>
       </div>
 
-      <p class="place">ララシャンス博多の森</p>
-      <p>福岡県福岡市博多区東月隈3-26-70</p>
-      <p><a href="tel:0120-777-355">0120-777-355</a></p>
-      <a href="https://www.ikk-wed.jp/hakatanomori/">https://www.ikk-wed.jp/hakatanomori/</a>
+      <div class="scroll_up">
+        <p class="place">ララシャンス博多の森</p>
+        <p>福岡県福岡市博多区東月隈3-26-70</p>
+        <p><a href="tel:0120-777-355">0120-777-355</a></p>
+        <a href="https://www.ikk-wed.jp/hakatanomori/">https://www.ikk-wed.jp/hakatanomori/</a>
+      </div>
     </div>
 
 
     <div class="attention_area">
-      <p class="label">MESSAGE</p>
-      <p class="sub_label">To our esteemed friends</p>
+      <div class="scroll_up_title">
+        <p class="label">MESSAGE</p>
+        <p class="sub_label">To our esteemed friends</p>
+      </div>
 
-      <div class="attention">
+      <div class="attention scroll_up">
         <p>＝＝＝感染予防対策について＝＝＝</p>
 
         <p>安心してお楽しみいただくため
@@ -170,14 +198,15 @@
       </div>
     </div>
 
-
     <form class="presence_area" id="form_area">
-      <p class="label">PRESENCE OR
-        <br>ABSENCE
-      </p>
-      <p class="sub_label">Please join us to celebrate</p>
+      <div class="scroll_up_title">
+        <p class="label">PRESENCE OR
+          <br>ABSENCE
+        </p>
+        <p class="sub_label">Please join us to celebrate</p>
+      </div>
 
-      <div class="presence_message">
+      <div class="presence_message scroll_up">
         お手数ですが　下記御日にちまでに
         <br>ご出欠情報の御連絡をお願い申し上げます
         <br>2023年2月25日（土）
@@ -185,7 +214,7 @@
         <br>御一報いただけますと幸いです
       </div>
 
-      <div class="form_area_wrapper">
+      <div class="form_area_wrapper scroll_up">
         <div class="form_area">
           <div>
             <div class="form_item">

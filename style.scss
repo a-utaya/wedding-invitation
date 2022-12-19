@@ -341,3 +341,36 @@ body {
 
   }
 }
+
+@mixin share_fadeup {
+  transform: translateY(80px);
+  opacity: 0;
+  visibility: hidden;
+}
+
+@mixin share_fadeup_on {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll_up_title {
+  transition: 0.7s ease-in-out;
+  @include share_fadeup;
+}
+
+.scroll_up {
+  transition: 1s ease-in-out;
+  @include share_fadeup;
+}
+
+.scroll_up_text {
+  transition: 1.3s ease-in-out;
+  @include share_fadeup;
+}
+
+.scroll_up_title.on,
+.scroll_up_text.on,
+.scroll_up.on {
+  @include share_fadeup_on;
+}

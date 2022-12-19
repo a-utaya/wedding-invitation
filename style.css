@@ -272,4 +272,32 @@ body {
   .presence_area .form_area_wrapper .form_area .form_item #guest_memo_allergy {
     width: 400px;
   }
+}
+.scroll_up_title {
+  transition: 0.7s ease-in-out;
+  transform: translateY(80px);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.scroll_up {
+  transition: 1s ease-in-out;
+  transform: translateY(80px);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.scroll_up_text {
+  transition: 1.3s ease-in-out;
+  transform: translateY(80px);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.scroll_up_title.on,
+.scroll_up_text.on,
+.scroll_up.on {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
 }/*# sourceMappingURL=style.css.map */
