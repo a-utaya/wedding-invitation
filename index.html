@@ -13,9 +13,27 @@
 </head>
 
 <body>
+  <!-- モーダルエリアここから -->
+<section id="modalArea" class="modalArea">
+  <div id="modalBg" class="modalBg"></div>
+  <div class="modalWrapper">
+    <div class="modalContents">
+      <p>このサイトではBGMが流れます</p>
+    </div>
+
+    <div class="bgm_button">
+      <div id="bgmNo" class="bgmNo">許可しない</div>
+      <div id="bgmOk" class="bgmOk">許可する</div>
+      </div>
+  </div>
+</section>
+<!-- モーダルエリアここまで -->
+
   <main>
+    <audio autoplay id="bgm" src="assets/audio/wedding_march.mp3"></audio>
+    <!-- <iframe src="assets/audio/wedding_march.mp3" allow="autoplay" style="display:none"></iframe> -->
     <div class="top_image_area">
-      <img class="top_image" src="images/family.png">
+      <img class="top_image" src="assets/images/family.png">
     </div>
 
     <div class="message_area  scroll_up_text">
@@ -58,7 +76,7 @@
       <div class="hosts">
         <div class="host">
           <div class="scroll_up">
-            <img src="images/99425096_551063462507507_3131830224564518912_n.jpeg" border="6">
+            <img src="assets/images/99425096_551063462507507_3131830224564518912_n.jpeg" border="6">
           </div>
           <div class="scroll_up">
             <p>Groom</p>
@@ -71,7 +89,7 @@
 
         <div class="host">
           <div class="scroll_up">
-            <img src="images/62543818_316901675880983_4049235900415082496_n.jpg" border="6">
+            <img src="assets/images/62543818_316901675880983_4049235900415082496_n.jpg" border="6">
           </div>
           <div class="scroll_up">
             <p>Bride</p>
