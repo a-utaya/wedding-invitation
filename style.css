@@ -82,6 +82,9 @@ body {
   }
 }
 .message_area {
+  background-image: url("assets/images/pearl.jpeg");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
   font-family: "Klee One";
   line-height: 22px;
   padding: 100px 0px;
@@ -238,9 +241,28 @@ body {
   }
 }
 .attention_area {
+  background-image: url("assets/images/attention_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  color: black;
   line-height: 24px;
-  padding: 100px 50px;
+  padding: 100px 0;
   text-align: center;
+}
+.attention_area .attenntion_bg {
+  background-color: rgba(255, 255, 255, 0.465);
+  border-radius: 10px;
+  padding: 50px 0;
+  margin: 0 50px;
+}
+
+.attention_movie {
+  width: 90%;
+  margin: 20px auto 0;
+}
+.attention_movie iframe {
+  display: block;
+  height: 200px;
 }
 
 @media screen and (min-width: 480px) {
@@ -249,6 +271,10 @@ body {
   }
 }
 .presence_area {
+  background-image: url("assets/images/tower.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  color: #fff;
   line-height: 24px;
   padding: 100px 50px;
   text-align: center;
