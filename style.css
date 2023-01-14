@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Klee One");
 * {
   margin: 0px;
@@ -15,6 +16,45 @@ body {
     font-size: 20px;
   }
 }
+.modalArea {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+}
+.modalArea .modalBg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 30, 30, 0.9);
+}
+.modalArea .modalWrapper {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 70%;
+  height: 100px;
+  max-width: 500px;
+  padding: 20px 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  line-height: 50px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.modalArea .bgm_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.modalArea .bgm_button .bgmNo {
+  color: red;
+  margin-right: 50px;
+}
+.modalArea .bgm_button .bgmOk {
+  color: blue;
+}
+
 .top_image_area img {
   width: 100%;
 }
@@ -84,7 +124,7 @@ body {
   }
 }
 .countdown_area {
-  background-image: url("images/lalachance.jpeg");
+  background-image: url("assets/images/lalachance.jpeg");
   background-repeat: no-repeat;
   color: #fff;
   padding: 100px 20px;
@@ -126,7 +166,7 @@ body {
 
 @media screen and (min-width: 480px) {
   .countdown_area {
-    background-image: url("images/countdown_bg.jpeg");
+    background-image: url("assets/images/countdown_bg.jpeg");
     background-repeat: no-repeat;
     padding: 100px 50px;
     line-height: 50px;
@@ -213,6 +253,9 @@ body {
   padding: 100px 50px;
   text-align: center;
 }
+.presence_area .presence_message span {
+  font-size: 16px;
+}
 .presence_area .form_area {
   padding-top: 20px;
   text-align: left;
@@ -229,47 +272,46 @@ body {
     line-height: 40px;
     padding: 100px 50px;
   }
-  .presence_area .form_area_wrapper {
-    text-align: center;
-    display: block;
+  .presence_area .presence_message span {
+    font-size: 24px;
   }
-  .presence_area .form_area_wrapper .form_area {
+  .presence_area .form_area {
     padding-top: 20px;
     display: inline-block;
   }
-  .presence_area .form_area_wrapper .form_area .form_item {
+  .presence_area .form_area .form_item {
     display: flex;
     padding: 10px 0px;
   }
-  .presence_area .form_area_wrapper .form_area .form_item p {
+  .presence_area .form_area .form_item p {
     width: 200px;
   }
-  .presence_area .form_area_wrapper .form_area .form_item #firstName {
+  .presence_area .form_area .form_item #firstName {
     width: 100px;
   }
-  .presence_area .form_area_wrapper .form_area .form_item #firstNameKana {
+  .presence_area .form_area .form_item #firstNameKana {
     width: 100px;
   }
-  .presence_area .form_area_wrapper .form_area .form_item #lastName {
+  .presence_area .form_area .form_item #lastName {
     width: 100px;
   }
-  .presence_area .form_area_wrapper .form_area .form_item #lastNameKana {
+  .presence_area .form_area .form_item #lastNameKana {
     width: 100px;
   }
-  .presence_area .form_area_wrapper .form_area .form_item #tel {
+  .presence_area .form_area .form_item #tel {
     width: 200px;
   }
-  .presence_area .form_area_wrapper .form_area .form_item #address {
+  .presence_area .form_area .form_item #address {
     width: 400px;
   }
-  .presence_area .form_area_wrapper .form_area .form_item #email {
+  .presence_area .form_area .form_item #email {
     width: 300px;
   }
-  .presence_area .form_area_wrapper .form_area .form_item textarea {
+  .presence_area .form_area .form_item textarea {
     width: 400px;
     height: 200px;
   }
-  .presence_area .form_area_wrapper .form_area .form_item #guest_memo_allergy {
+  .presence_area .form_area .form_item #guest_memo_allergy {
     width: 400px;
   }
 }

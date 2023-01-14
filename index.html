@@ -13,31 +13,49 @@
 </head>
 
 <body>
+  <!-- モーダルエリアここから -->
+<section id="modalArea" class="modalArea">
+  <div id="modalBg" class="modalBg"></div>
+  <div class="modalWrapper">
+    <div class="modalContents">
+      <p>このサイトではBGMが流れます</p>
+    </div>
+
+    <div class="bgm_button">
+      <div id="bgmNo" class="bgmNo">許可しない</div>
+      <div id="bgmOk" class="bgmOk">許可する</div>
+      </div>
+  </div>
+</section>
+<!-- モーダルエリアここまで -->
+
   <main>
+    <audio autoplay id="bgm" src="assets/audio/wedding_march.mp3"></audio>
+
     <div class="top_image_area">
-      <img class="top_image" src="images/family.png">
+      <img class="top_image" src="assets/images/family.png">
     </div>
 
     <div class="message_area  scroll_up_text">
-      <p>拝啓</p>
+      <p>新春の候</p>
 
-      <p>皆様におかれましては
-        <br>ますますご清祥のことと
+      <p>皆様には益々ご清祥のことと
         <br>お慶び申し上げます
       </p>
 
-      <p>このたび　私たちは<br>結婚式を行うこととなりました</p>
+      <p>このたび　私たちは結婚し
+        <br>ふたりで共に歩むことになりました</p>
 
-      <p>つきましては
-        <br>日頃お世話になっております皆様に
-        <br>感謝を込めて
-        <br>ささやかではございますが
-        <br>祝言を執り行いたく存じます
+      <p>これまでに皆様がくださった愛と励ましに
+        <br>心から感謝すると共に
+        <br>今後とも　末長いお付き合いをお願いいたしたく
+        <br>ささやかながら
+        <br>結婚披露宴を行いたいと思います
       </p>
 
-      <p>お忙しい中　まことに恐縮ではございますが
-        <br>ぜひご出席くださいますよう
-        <br>ご案内申し上げます
+      <p>お忙しい中　誠に恐縮ではございますが
+        <br>ぜひご出席いただき
+        <br>歓びを共にしていただければ幸いです
       </p>
 
       <p>敬具</p>
@@ -58,7 +76,7 @@
       <div class="hosts">
         <div class="host">
           <div class="scroll_up">
-            <img src="images/99425096_551063462507507_3131830224564518912_n.jpeg" border="6">
+            <img src="assets/images/99425096_551063462507507_3131830224564518912_n.jpeg" border="6">
           </div>
           <div class="scroll_up">
             <p>Groom</p>
@@ -71,7 +89,7 @@
 
         <div class="host">
           <div class="scroll_up">
-            <img src="images/62543818_316901675880983_4049235900415082496_n.jpg" border="6">
+            <img src="assets/images/62543818_316901675880983_4049235900415082496_n.jpg" border="6">
           </div>
           <div class="scroll_up">
             <p>Bride</p>
@@ -209,7 +227,7 @@
       <div class="presence_message scroll_up">
         お手数ですが　下記御日にちまでに
         <br>ご出欠情報の御連絡をお願い申し上げます
-        <br>2023年2月25日（土）
+        <br><span>2023年2月7日（火）</span>
         <br>期日までのご連絡が難しい場合には
         <br>御一報いただけますと幸いです
       </div>

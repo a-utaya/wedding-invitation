@@ -3,6 +3,21 @@
 //   $("#splash_logo").delay(1200).fadeOut('slow');//ロゴを1.2秒（1200ms）待機してからフェードアウト
 // });
 
+// if(document.getElementById("dialog"))
+
+// document.getElementById("audio").play()
+$(function () {
+  $('#modalArea').fadeIn();
+
+  $('#bgmOk').click(function(){
+    $('#modalArea').fadeOut();
+    document.getElementById("bgm").play()
+  });
+
+  $('#bgmNo').click(function(){
+    $('#modalArea').fadeOut();
+  });
+});
 
 // カウントダウン
 let countdown = setInterval(function () {
