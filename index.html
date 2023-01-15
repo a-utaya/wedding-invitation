@@ -13,10 +13,10 @@
 </head>
 
 <body>
- 
+
 
   <main>
-     <!-- モーダルエリアここから -->
+    <!-- モーダルエリアここから -->
     <section id="movie_modal_area" class="movie_modal_area">
       <div id="movie_modal" class="movie_modal"></div>
       <div class="modalWrapper">
@@ -27,10 +27,10 @@
         <div class="modal_button">
           <div id="movie_no" class="no">許可しない</div>
           <div id="movie_ok" class="ok">許可する</div>
-          </div>
+        </div>
       </div>
     </section>
-<!-- モーダルエリアここまで -->
+    <!-- モーダルエリアここまで -->
 
     <audio autoplay loop id="bgm" src="assets/audio/m&a.m4a"></audio>
 
@@ -101,6 +101,9 @@
 
           <div class="scroll_up">
             <p>この度晴れて梓さんと結婚することとなりました
+              <br>周りの方々にたくさん支えられながら
+              <br>結婚まで進むことができました
+              <br>本当にありがとうございます
               <br>今後とも家族共々よろしくお願いします
             </p>
           </div>
@@ -335,8 +338,8 @@
                 <span class="required_label">必須</span>
               </div>
 
-              <input type="tel" id="tel" name="tel" class="input" required pattern="\d" placeholder="ハイフン無しでご入力ください"
-                minlength="9" maxlength="11" size="30">
+              <input type="tel" id="tel" name="tel" class="input" required placeholder="ハイフン無しでご入力ください" minlength="9"
+                maxlength="11" size="30">
               <hr class="line">
             </div>
           </div>
@@ -348,8 +351,8 @@
                 <span class="required_label">必須</span>
               </div>
 
-              <input type="text" id="" name="first_postalCode" class="input" required pattern="\d" minlength="3"
-                maxlength="3" size="10">
+              <input type="text" id="" name="first_postalCode" class="input" required minlength="3" maxlength="3"
+                size="10">
               ー <input type="text" id="" name="second_postalCode" class="input" required minlength="4" maxlength="4"
                 size="10">
               <hr class="line">
@@ -411,10 +414,11 @@
               <div class="form_item_title">
                 <p>お連れ様追加</p>
               </div>
-              
+
               <div class="add_family_area" id="add_family_area">
                 <input type="text" id="family_name" name="family_name" class="input" placeholder="お連れ様のお名前" size="40">
-                <input type="text" id="family_allergy" name="family_allergy" class="input allergy" placeholder="アレルギー詳細" size="40">
+                <input type="text" id="family_allergy" name="family_allergy" class="input allergy" placeholder="アレルギー詳細"
+                  size="40">
                 <input type="button" value="お連れ様を追加する" id="add_family_button" />
               </div>
             </div>
@@ -445,7 +449,7 @@
                   <input checked="checked" type="radio" id="afterparty_presence" name="afterparty_attendance" value="">
                   <label for="afterparty_presence">ご出席</label>
                 </div>
-  
+
                 <div class="afterparty_attendance_item">
                   <input type="radio" id="afterparty_absence" name="afterparty_attendance" value="">
                   <label for="afterparty_absence">ご欠席</label>
@@ -461,4 +465,5 @@
   </main>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 </html>
