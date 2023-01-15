@@ -14,7 +14,7 @@
 
 <body>
   <!-- モーダルエリアここから -->
-<!-- <section id="movie_modal_area" class="movie_modal_area">
+<section id="movie_modal_area" class="movie_modal_area">
   <div id="movie_modal" class="movie_modal"></div>
   <div class="modalWrapper">
     <div class="modalContents">
@@ -26,7 +26,7 @@
       <div id="movie_ok" class="ok">許可する</div>
       </div>
   </div>
-</section> -->
+</section>
 <!-- モーダルエリアここまで -->
 
   <main>
@@ -45,7 +45,8 @@
         </p>
 
         <p>このたび　私たちは結婚し
-          <br>ふたりで共に歩むことになりました</p>
+          <br>ふたりで共に歩むことになりました
+        </p>
 
         <p>これまでに皆様がくださった愛と励ましに
           <br>心から感謝すると共に
@@ -95,10 +96,10 @@
           <div class="scroll_up">
             <p class="name">中村　幹</p>
           </div>
-          
+
           <div class="scroll_up">
-            <p>メッセージメッセージメッセージメッセージ
-              <br>メッセージメッセージメッセージメッセージ
+            <p>この度晴れて梓さんと結婚することとなりました
+              <br>今後とも家族共々よろしくお願いします
             </p>
           </div>
         </div>
@@ -232,17 +233,20 @@
           </p>
         </div>
       </div>
-      
+
       <div class="attention scroll_up">
         <div class="attention_movie">
-          <iframe width="100%" src="https://www.youtube.com/embed/Xdrb3T8irf0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe width="100%" src="https://www.youtube.com/embed/Xdrb3T8irf0" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
         </div>
       </div>
     </div>
 
-    
 
-    <form class="presence_area">
+
+    <form class="presence_area" method="POST" action="https://invite-d4m4.onrender.com/api/users">
       <div class="presence_message_area">
         <div class="scroll_up_title">
           <p class="label">PRESENCE OR
@@ -259,7 +263,7 @@
           <br>御一報いただけますと幸いです
         </div>
       </div>
-      
+
       <div class="form_area_wrapper scroll_up">
         <div class="form_area">
           <div>
@@ -284,8 +288,10 @@
                 <span class="required_label">必須</span>
               </div>
 
-              <input type="text" id="lastName" name="name" class="input" required placeholder="姓" minlength="1" size="14">
-              &emsp;<input type="text" id="firstName" name="name" class="input" required placeholder="名" minlength="1" size="14">
+              <input type="text" id="lastName" name="last_name" class="input" required placeholder="姓" minlength="1"
+                size="14">
+              &emsp;<input type="text" id="firstName" name="first_name" class="input" required placeholder="名"
+                minlength="1" size="14">
               <hr class="line">
             </div>
           </div>
@@ -297,8 +303,10 @@
                 <span class="required_label">必須</span>
               </div>
 
-              <input type="text" id="lastNameKana" name="kana" class="input" required placeholder="せい" minlength="1" size="14">
-              &emsp;<input type="text" id="firstNameKana" name="kana" class="input" required placeholder="めい" minlength="1" size="14">
+              <input type="text" id="lastNameKana" name="last_name_kana" class="input" required placeholder="せい"
+                minlength="1" size="14">
+              &emsp;<input type="text" id="firstNameKana" name="first_name_kana" class="input" required placeholder="めい"
+                minlength="1" size="14">
               <hr class="line">
             </div>
           </div>
@@ -306,8 +314,8 @@
           <div>
             <div class="form_item">
               <div class="form_item_title">
-               <p>性別</p>
-               <span class="required_label">必須</span>
+                <p>性別</p>
+                <span class="required_label">必須</span>
               </div>
 
               <input type="radio" id="female" name="gender" class="radio" value="male" checked>
@@ -321,12 +329,12 @@
           <div>
             <div class="form_item">
               <div class="form_item_title">
-               <p>電話番号</p>
-               <span class="required_label">必須</span>
+                <p>電話番号</p>
+                <span class="required_label">必須</span>
               </div>
 
               <input type="tel" id="tel" name="tel" class="input" required pattern="\d" placeholder="ハイフン無しでご入力ください"
-               minlength="9" maxlength="11" size="30">
+                minlength="9" maxlength="11" size="30">
               <hr class="line">
             </div>
           </div>
@@ -334,12 +342,14 @@
           <div>
             <div class="form_item">
               <div class="form_item_title">
-               <p>郵便番号</p>
-               <span class="required_label">必須</span>
+                <p>郵便番号</p>
+                <span class="required_label">必須</span>
               </div>
 
-              <input type="text" id="" name="postalCode" class="input" required pattern="\d" minlength="3" maxlength="3" size="10">
-              ー <input type="text" id="" name="postalCode" class="input" required minlength="4" maxlength="4" size="10">
+              <input type="text" id="" name="first_postalCode" class="input" required pattern="\d" minlength="3"
+                maxlength="3" size="10">
+              ー <input type="text" id="" name="second_postalCode" class="input" required minlength="4" maxlength="4"
+                size="10">
               <hr class="line">
             </div>
           </div>
@@ -347,11 +357,12 @@
           <div>
             <div class="form_item">
               <div class="form_item_title">
-               <p>ご住所</p>
-               <span class="required_label">必須</span>
+                <p>ご住所</p>
+                <span class="required_label">必須</span>
               </div>
 
-              <textarea type="text" id="address" name="address" required placeholder="福岡県福岡市中村区歌谷1-1-1 ララシャンスマンション101"></textarea>
+              <textarea type="text" id="address" name="address" required
+                placeholder="福岡県福岡市中村区歌谷1-1-1 ララシャンスマンション101"></textarea>
               <hr class="line">
             </div>
           </div>
@@ -359,12 +370,12 @@
           <div>
             <div class="form_item">
               <div class="form_item_title">
-               <p>メールアドレス</p>
-               <span class="required_label">必須</span>
+                <p>メールアドレス</p>
+                <span class="required_label">必須</span>
               </div>
 
               <input type="email" id="email" name="email" class="input" required
-               pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="♡♡♡♡@.com" size="40">
+                pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="♡♡♡♡@.com" size="40">
               <hr class="line">
             </div>
           </div>
@@ -372,7 +383,7 @@
           <div>
             <div class="form_item">
               <div class="form_item_title">
-               <p>メッセージ</p>
+                <p>メッセージ</p>
               </div>
 
               <span class="span">新郎新婦にメッセージを送ることができます</span>
@@ -414,7 +425,7 @@
                   <input checked="checked" type="radio" id="presence" name="attendance" value="">
                   <label for="presence">ご出席</label>
                 </div>
-  
+
                 <div class="attendance_item">
                   <input type="radio" id="absence" name="attendance" value="">
                   <label for="absence">ご欠席</label>
