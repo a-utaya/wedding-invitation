@@ -2,10 +2,10 @@
 const audio_volume=function(){
 
   const bgm = document.getElementById("bgm");
-  bgm.volume = 0.05;
+  bgm.volume = 0.1;
 
   const movie = document.getElementById("movie");
-  movie.volume = 2;
+  movie.volume = 1;
 }
 window.addEventListener('DOMContentLoaded' , function(){
       audio_volume();

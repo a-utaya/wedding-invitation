@@ -188,11 +188,17 @@ video {
       display: flex;
       justify-content: center;
 
-
       .name {
         font-size: 36px;
         margin: 16px 0px 30px;
       }
+
+      .host{
+        .host_img {
+          height: 300px;
+        }
+      }
+
     }
   }
 }
