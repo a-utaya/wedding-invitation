@@ -1,23 +1,29 @@
-// $(window).on('load', function () {
-//   $("#splash").delay(1500).fadeOut('slow');//ローディング画面を1.5秒（1500ms）待機してからフェードアウト
-//   $("#splash_logo").delay(1200).fadeOut('slow');//ロゴを1.2秒（1200ms）待機してからフェードアウト
-// });
-
-// if(document.getElementById("dialog"))
-
-// document.getElementById("audio").play()
 $(function () {
-  $('#modalArea').fadeIn();
+  $('#movie_modalArea').fadeIn();
 
-  $('#bgmOk').click(function(){
-    $('#modalArea').fadeOut();
+  $('#movie_ok').click(function(){
+    $('#movie_modalArea').fadeOut();
+    document.getElementById("movie").play()
     document.getElementById("bgm").play()
   });
 
-  $('#bgmNo').click(function(){
-    $('#modalArea').fadeOut();
+  $('#movie_no').click(function(){
+    $('#movie_modalArea').fadeOut();
   });
 });
+
+// $(function () {
+//   $('#modalArea').fadeIn();
+
+//   $('#bgmOk').click(function(){
+//     $('#modalArea').fadeOut();
+//     document.getElementById("bgm").play()
+//   });
+
+//   $('#bgmNo').click(function(){
+//     $('#modalArea').fadeOut();
+//   });
+// });
 
 // カウントダウン
 let countdown = setInterval(function () {

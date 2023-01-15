@@ -14,11 +14,32 @@
 
 <body>
   <!-- モーダルエリアここから -->
+<section id="movie_modalArea" class="movie_modalArea">
+  <div id="movie_modal" class="movie_modal"></div>
+  <div class="modalWrapper">
+    <div class="modalContents">
+      <p>最初に動画が流れます♪</p>
+    </div>
+
+    <div class="modal_button">
+      <div id="movie_no" class="no">許可しない</div>
+      <div id="movie_ok" class="ok">許可する</div>
+      </div>
+  </div>
+</section>
+<!-- モーダルエリアここまで -->
+
+  <main>
+    <audio autoplay loop id="bgm" src="assets/audio/m&a.m4a"></audio>
+
+    <video autoplay id="movie" src="assets/audio/wedding_invitation.mp4" controls></video>
+
+      <!-- モーダルエリアここから -->
 <!-- <section id="modalArea" class="modalArea">
   <div id="modalBg" class="modalBg"></div>
   <div class="modalWrapper">
     <div class="modalContents">
-      <p>このサイトではBGMが流れます</p>
+      <p>最初に動画が流れます♪</p>
     </div>
 
     <div class="bgm_button">
@@ -29,12 +50,6 @@
 </section> -->
 <!-- モーダルエリアここまで -->
 
-  <main>
-    <audio autoplay id="bgm" src="assets/audio/m&a.m4a"></audio>
-
-    <div class="top_image_area">
-      <img class="top_image" src="assets/images/family.png">
-    </div>
 
     <div class="message_area">
       <div class="scroll_up_text">
@@ -83,14 +98,22 @@
         <p class="label">HOST</p>
         <p class="sub_label">Thank you for always supporting us...</p>
       </div>
+
       <div class="hosts">
         <div class="host">
           <div class="scroll_up">
             <img src="assets/images/99425096_551063462507507_3131830224564518912_n.jpeg" border="6">
           </div>
+
           <div class="scroll_up">
             <p>Groom</p>
+          </div>
+
+          <div class="scroll_up">
             <p class="name">中村　幹</p>
+          </div>
+          
+          <div class="scroll_up">
             <p>メッセージメッセージメッセージメッセージ
               <br>メッセージメッセージメッセージメッセージ
             </p>
@@ -101,9 +124,16 @@
           <div class="scroll_up">
             <img src="assets/images/62543818_316901675880983_4049235900415082496_n.jpg" border="6">
           </div>
+
           <div class="scroll_up">
             <p>Bride</p>
+          </div>
+
+          <div class="scroll_up">
             <p class="name">歌谷　梓</p>
+          </div>
+
+          <div class="scroll_up">
             <p class="message">幹さんと出会い
               <br>6年間長男と駆け抜けてきた足を緩め
               <br>ゆっくりと　安心して
@@ -229,127 +259,192 @@
 
     
 
-    <form class="presence_area" id="form_area">
-      <div class="scroll_up_title">
-        <p class="label">PRESENCE OR
-          <br>ABSENCE
-        </p>
-        <p class="sub_label">Please join us to celebrate</p>
-      </div>
+    <form class="presence_area">
+      <div class="presence_message_area">
+        <div class="scroll_up_title">
+          <p class="label">PRESENCE OR
+            <br>ABSENCE
+          </p>
+          <p class="sub_label">Please join us to celebrate</p>
+        </div>
 
-      <div class="presence_message scroll_up">
-        お手数ですが　下記御日にちまでに
-        <br>ご出欠情報の御連絡をお願い申し上げます
-        <br><span>2023年2月7日（火）</span>
-        <br>期日までのご連絡が難しい場合には
-        <br>御一報いただけますと幸いです
+        <div class="presence_message scroll_up">
+          お手数ですが　下記御日にちまでに
+          <br>ご出欠情報のご入力をお願い申し上げます
+          <br><span>2023年2月7日（火）</span>
+          <br>期日までのご連絡が難しい場合には
+          <br>御一報いただけますと幸いです
+        </div>
       </div>
-
+      
       <div class="form_area_wrapper scroll_up">
         <div class="form_area">
           <div>
             <div class="form_item">
-              <p>ゲストタイプ</p>
-              <input type="radio" name="type" value="bridegroom" checked> 新郎側
-              &emsp;&emsp;<input type="radio" name="type" value="bride"> 新婦側
+              <div class="form_item_title">
+                <p>ゲスト様</p>
+                <span class="required_label">必須</span>
+              </div>
+
+              <input type="radio" id="bridegroom" name="type" class="radio" value="bridegroom">
+              <label class="radio_label" for="bridegroom">新郎側</label>
+              <input type="radio" id="bride" name="type" class="radio" value="bride">
+              <label class="radio_label" for="bride">新婦側</label>
+              <hr class="line">
             </div>
           </div>
 
           <div>
             <div class="form_item">
-              <p>お名前</p>
-              <input type="text" id="lastName" name="name" required placeholder="歌谷" minlength="1" size="10">
-              &emsp;<input type="text" id="firstName" name="name" required placeholder="凛太" minlength="1" size="10">
+              <div class="form_item_title">
+                <p>お名前</p>
+                <span class="required_label">必須</span>
+              </div>
+
+              <input type="text" id="lastName" name="name" class="input" required placeholder="姓" minlength="1" size="14">
+              &emsp;<input type="text" id="firstName" name="name" class="input" required placeholder="名" minlength="1" size="14">
+              <hr class="line">
             </div>
           </div>
 
           <div>
             <div class="form_item">
-              <p>フリガナ</p>
-              <input type="text" id="lastNameKana" name="kana" required placeholder="ウタヤ" minlength="4" maxlength="8"
-                size="10">
-              &emsp;<input type="text" id="firstNameKana" name="kana" required placeholder="リンタ" minlength="4"
-                maxlength="8" size="10">
+              <div class="form_item_title">
+                <p>ふりがな</p>
+                <span class="required_label">必須</span>
+              </div>
+
+              <input type="text" id="lastNameKana" name="kana" class="input" required placeholder="せい" minlength="1" size="14">
+              &emsp;<input type="text" id="firstNameKana" name="kana" class="input" required placeholder="めい" minlength="1" size="14">
+              <hr class="line">
             </div>
           </div>
 
           <div>
             <div class="form_item">
-              <p>性別</p>
-              <input type="radio" name="gender" value="male" checked> 男性
-              &emsp;<input type="radio" name="gender" value="female"> 女性
+              <div class="form_item_title">
+               <p>性別</p>
+               <span class="required_label">必須</span>
+              </div>
+
+              <input type="radio" id="female" name="gender" class="radio" value="male" checked>
+              <label class="radio_label" for="male">男性</label>
+              <input type="radio" id="female" name="gender" class="radio" value="female">
+              <label class="radio_label" for="female">女性</label>
+              <hr class="line">
             </div>
           </div>
 
           <div>
             <div class="form_item">
-              <p>電話番号</p>
-              <input type="tel" id="tel" name="tel" required placeholder="ハイフン無しでご入力ください">
+              <div class="form_item_title">
+               <p>電話番号</p>
+               <span class="required_label">必須</span>
+              </div>
+
+              <input type="tel" id="tel" name="tel" class="input" required pattern="\d" placeholder="ハイフン無しでご入力ください"
+               minlength="9" maxlength="11" size="30">
+              <hr class="line">
             </div>
           </div>
 
           <div>
             <div class="form_item">
-              <p>郵便番号</p>
-              <input type="text" id="" name="postalCode" required placeholder="♡♡♡" minlength="3" size="10">
-              ー<input type="text" id="" name="postalCode" required placeholder="♡♡♡♡" minlength="4" size="10">
+              <div class="form_item_title">
+               <p>郵便番号</p>
+               <span class="required_label">必須</span>
+              </div>
+
+              <input type="text" id="" name="postalCode" class="input" required pattern="\d" minlength="3" maxlength="3" size="10">
+              ー <input type="text" id="" name="postalCode" class="input" required minlength="4" maxlength="4" size="10">
+              <hr class="line">
             </div>
           </div>
 
           <div>
             <div class="form_item">
-              <p>ご住所</p>
-              <input type="text" id="address" name="address" required placeholder="♡♡県♡♡市♡♡区♡♡00-0　（マンション名など）">
+              <div class="form_item_title">
+               <p>ご住所</p>
+               <span class="required_label">必須</span>
+              </div>
+
+              <textarea type="text" id="address" name="address" required placeholder="福岡県福岡市中村区歌谷1-1-1 ララシャンスマンション101"></textarea>
+              <hr class="line">
             </div>
           </div>
 
           <div>
             <div class="form_item">
-              <p>メールアドレス</p>
-              <input type="email" id="email" name="email" required placeholder="♡♡♡♡@.com">
+              <div class="form_item_title">
+               <p>メールアドレス</p>
+               <span class="required_label">必須</span>
+              </div>
+
+              <input type="email" id="email" name="email" class="input" required
+               pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="♡♡♡♡@.com" size="40">
+              <hr class="line">
             </div>
           </div>
 
           <div>
             <div class="form_item">
-              <p>メッセージ</p>
-              <!-- <span>新郎新婦にメッセージを送ることができます</span> -->
-              <textarea name="guest[message]"></textarea>
+              <div class="form_item_title">
+               <p>メッセージ</p>
+              </div>
 
+              <span>新郎新婦にメッセージを送ることができます</span>
+              <textarea name="message" class="message_textarea"></textarea>
+              <hr class="line">
             </div>
           </div>
 
           <div>
             <div class="form_item">
-              <p>アレルギー</p>
-              <!-- <span class="form-Main_ValueNote" style="color:red;">アレルギーをお持ちの方のみご記入ください</span> -->
-              <input type="text" id="guest_memo_allergy" name="guest[memo_allergy]">
+              <div class="form_item_title">
+                <p>アレルギー</p>
+              </div>
+
+              <span class="allergy_label">※アレルギーをお持ちの方のみご記入ください</span>
+              <input type="text" id="allergy" name="allergy" class="input" size="40">
+              <hr class="line">
             </div>
           </div>
 
           <div>
             <div class="form_item">
-              <p>お連れ様追加</p>
+              <div class="form_item_title">
+                <p>お連れ様追加</p>
+              </div>
+              
               <div class="form-Main_Value" id="l_family_member_form">
-                <input type="hidden" name="family_members[][id]" value="" />
-                <input type="text" name="family_members[][joint_name]" value="" />
-                <input type="text" name="family_members[][memo_allergy]" value="" />
-                <input type="button" value="お連れ様を追加する" id="l_add_family_member_button" />
+                <input type="text" id="family_name" name="family_name" class="input" placeholder="お連れ様のお名前" size="40">
+                <input type="text" id="family_allergy" name="family_allergy" class="input" placeholder="アレルギー詳細" size="40">
+                <input type="button" value="お連れ様を追加する" id="add_family_button" />
               </div>
             </div>
           </div>
 
+          <div>
+            <div class="form_item">
+              <div class="attendance_area">
+                <div class="attendance_item">
+                  <input checked="checked" type="radio" id="presence" name="ttendance" value="">
+                  <label for="presence">ご出席</label>
+                </div>
+  
+                <div class="attendance_item">
+                  <input type="radio" id="absence" name="ttendance" value="">
+                  <label for="absence">ご欠席</label>
+                </div>
+              </div>
+            </div>
+            </div>
+
+          <button type="submit" id="send">送信する</button>
         </div>
       </div>
-
-      <div>
-        <button type="submit" id="send">送信する</button>
-      </div>
-
     </form>
   </main>
-
-
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <!-- <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/4-1-4/js/4-1-4.js"></script> -->

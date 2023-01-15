@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Klee One');
+// @import url('https://fonts.googleapis.com/css?family=Klee One');
+@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&display=swap');
 
 * {
   margin: 0px;
@@ -14,6 +15,50 @@ body {
 @media screen and (min-width:480px) {
   body {
     font-size: 20px;
+  }
+}
+
+.movie_modalArea {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+
+  .movie_modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(30,30,30,0.9);
+  }
+  
+  .modalWrapper {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 70%;
+    height: 100px;
+    max-width: 500px;
+    padding: 20px 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    line-height: 50px;
+    transform:translate(-50%,-50%);
+    text-align: center;
+  }
+  
+  .modal_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    .no{
+      color: red;
+      margin-right: 50px;
+    }
+
+    .ok{
+      color: blue;
+    }
   }
 }
 
@@ -63,10 +108,8 @@ body {
 
 
 
-.top_image_area {
-  img {
+video {
     width: 100%;
-  }
 }
 
 .label {
@@ -130,7 +173,7 @@ body {
 
 @media screen and (min-width:480px) {
   .host_area {
-    padding: 100px 50px;
+    padding: 100px 20px;
     line-height: 40px;
 
     .hosts {
@@ -201,7 +244,7 @@ body {
   .countdown_area {
     background-image: url("assets/images/countdown_bg.jpeg");
     background-repeat: no-repeat;
-    padding: 100px 50px;
+    padding: 100px 20px;
     line-height: 50px;
 
     .to {
@@ -306,7 +349,7 @@ body {
     background-color: rgba(255, 255, 255, 0.465);
     border-radius: 10px;
     padding: 50px 0;
-    margin: 0  50px;
+    margin: 0  20px;
   }
 }
 
@@ -329,14 +372,14 @@ body {
 
 
 .presence_area {
-  background-image: url("assets/images/tower.png");
-  background-repeat: no-repeat;
-  background-size:100% auto;
+  background-color:	rgb(20,20,20);
   color: #fff;
   line-height: 24px;
-  padding: 100px 50px;
   text-align: center;
 
+  .presence_message_area{
+    padding: 100px 20px 0;
+  }
 
   .presence_message{
     span{
@@ -345,23 +388,111 @@ body {
   }
 
   .form_area {
-    padding-top: 20px;
+    background-image: url("assets/images/tower.png");
+    background-repeat: no-repeat;
+    background-size:100% auto;  
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+    padding: 20px 20px;
     text-align: left;
 
-    p input {
-      text-align: left;
+
+    .form_item {
+      padding: 10px 0px;
+
+      input[type="radio"]{
+        display: none; /* ラジオボタンを非表示にする */
+      }
+
+
+      .form_item_title{
+        display: flex;
+        margin-bottom: 10px;
+
+        p{
+          font-weight: bold;
+        }
+
+        .required_label{
+          background-color: rgb(255, 99, 118);
+          padding: 0 4px;
+          margin-left: 10px;
+        }
+      }
+
+      .line{
+        margin-top: 20px;
+      }
+
+      .radio{
+        accent-color: rgb(255, 99, 118);
+        transform: scale(1.4);
+      }
+  
+      .radio_label{
+        display: inline-block;
+        font-size: 18px;
+        line-height: 20px;		/* ボタンのサイズに合わせる */
+        margin: 0 30px 0 8px;	/* ラベルの位置 */
+        position: relative;
+      }
+  
+      .input{
+          border-radius: 6px;
+          height: 40px;
+          padding-left: 10px;
+        }
+  
+      p input {
+        text-align: left;
+      }
+  
+      span{
+        font-size: 12px;
+      }
+  
+      textarea{
+        border-radius: 6px;
+        width: 90%;
+        padding: 10px;
+      }
+  
+      .message_textarea{
+        height: 60px;
+      }
+  
+      .allergy_label{
+        color: red;
+      }
+
+      .attendance_area{
+        display: flex;
+        justify-content: center;
+      }
+        
+      input[type="radio"]:checked + label {
+        border: 1px solid;
+        border-radius: 50%;
+        border-color: rgb(255, 99, 118);
+      }
+
+      label{
+        margin: 0 10px;
+        font-family: 'Klee One';
+        font-size: 24px;
+        padding: 0 10px;
+        display: inline-block;
+        line-height: 90px;
+      }
     }
   }
 
-  .form_item {
-    padding: 10px 0px;
-  }
+  
 }
 
 @media screen and (min-width:480px) {
   .presence_area {
     line-height: 40px;
-    padding: 100px 50px;
+    padding: 100px 20px;
 
     .presence_message{
       span{
