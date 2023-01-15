@@ -331,7 +331,6 @@ video {
   .map {
     height: 300px;
     margin-bottom: 20px;
-    ;
     overflow: hidden;
 
     iframe {
@@ -343,10 +342,12 @@ video {
 
   .place {
     font-size: 18px;
+    margin-bottom: 10px;
   }
 
   a {
-    color: rgb(255, 40, 115);
+    color: rgb(255, 99, 118);
+    font-size: 15px;
     text-decoration: none;
   }
 }

@@ -282,9 +282,11 @@ video {
 }
 .access_area .place {
   font-size: 18px;
+  margin-bottom: 10px;
 }
 .access_area a {
-  color: rgb(255, 40, 115);
+  color: rgb(255, 99, 118);
+  font-size: 15px;
   text-decoration: none;
 }
 
