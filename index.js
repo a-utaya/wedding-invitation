@@ -1,3 +1,13 @@
+/* audio 音量の初期設定（デフォルトは1） */
+const audio_volume=function(){
+
+  const bgm = document.getElementById('bgm');
+  bgm.volume = 0.1;
+}
+window.addEventListener('DOMContentLoaded' , function(){
+      audio_volume();
+}, false); 
+
 $(function () {
   $('#movie_modalArea').fadeIn();
 
@@ -12,18 +22,6 @@ $(function () {
   });
 });
 
-// $(function () {
-//   $('#modalArea').fadeIn();
-
-//   $('#bgmOk').click(function(){
-//     $('#modalArea').fadeOut();
-//     document.getElementById("bgm").play()
-//   });
-
-//   $('#bgmNo').click(function(){
-//     $('#modalArea').fadeOut();
-//   });
-// });
 
 // カウントダウン
 let countdown = setInterval(function () {
@@ -49,7 +47,7 @@ let countdown = setInterval(function () {
   //指定の日時になればカウントを止める
   if (remainTime < 0) clearInterval(countdown)
 
-}, 1000)    //1秒間に1度処理
+}, 1000) //1秒間に1度処理
 
 //scrollしたらフェードアップ
 $(window).scroll(function () {
