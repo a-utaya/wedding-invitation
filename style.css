@@ -171,6 +171,9 @@ video {
     font-size: 36px;
     margin: 16px 0px 30px;
   }
+  .host_area .hosts .host .host_img {
+    height: 300px;
+  }
 }
 .countdown_area {
   background-image: url("assets/images/lalachance.jpeg");
