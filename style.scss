@@ -181,17 +181,31 @@ video {
 
 @media screen and (min-width:480px) {
   .host_area {
-    padding: 100px 20px;
     line-height: 40px;
+
+    .host{
+      .name {
+        font-size: 32px;
+        margin: 14px 0px 24px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width:1000px) {
+  .host_area {
+    line-height: 50px;
 
     .hosts {
       display: flex;
       justify-content: center;
 
-      .name {
-        font-size: 36px;
-        margin: 16px 0px 30px;
-      }
+      .host{
+        .name {
+          font-size: 40px;
+          margin: 16px 0px 30px;
+        }
+        }
 
       .host{
         .host_img {
