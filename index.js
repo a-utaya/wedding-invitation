@@ -9,16 +9,16 @@ window.addEventListener('DOMContentLoaded' , function(){
 }, false); 
 
 $(function () {
-  $('#movie_modalArea').fadeIn();
+  $('#movie_modal_area').fadeIn();
 
   $('#movie_ok').click(function(){
-    $('#movie_modalArea').fadeOut();
+    $('#movie_modal_area').fadeOut();
     document.getElementById("movie").play()
     document.getElementById("bgm").play()
   });
 
   $('#movie_no').click(function(){
-    $('#movie_modalArea').fadeOut();
+    $('#movie_modal_area').fadeOut();
   });
 });
 

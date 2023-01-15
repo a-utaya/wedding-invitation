@@ -14,20 +14,20 @@
 
 <body>
   <!-- モーダルエリアここから -->
-  <section id="movie_modalArea" class="movie_modalArea">
-    <div id="movie_modal" class="movie_modal"></div>
-    <div class="modalWrapper">
-      <div class="modalContents">
-        <p>最初に動画が流れます♪</p>
-      </div>
-
-      <div class="modal_button">
-        <div id="movie_no" class="no">許可しない</div>
-        <div id="movie_ok" class="ok">許可する</div>
-      </div>
+<section id="movie_modal_area" class="movie_modal_area">
+  <div id="movie_modal" class="movie_modal"></div>
+  <div class="modalWrapper">
+    <div class="modalContents">
+      <p>最初に動画が流れます♪</p>
     </div>
-  </section>
-  <!-- モーダルエリアここまで -->
+
+    <div class="modal_button">
+      <div id="movie_no" class="no">許可しない</div>
+      <div id="movie_ok" class="ok">許可する</div>
+      </div>
+  </div>
+</section>
+<!-- モーダルエリアここまで -->
 
   <main>
     <audio autoplay loop id="bgm" src="assets/audio/m&a.m4a"></audio>
@@ -386,7 +386,7 @@
                 <p>メッセージ</p>
               </div>
 
-              <span>新郎新婦にメッセージを送ることができます</span>
+              <span class="span">新郎新婦にメッセージを送ることができます</span>
               <textarea name="message" class="message_textarea"></textarea>
               <hr class="line">
             </div>
@@ -398,8 +398,8 @@
                 <p>アレルギー</p>
               </div>
 
-              <span class="allergy_label">※アレルギーをお持ちの方のみご記入ください</span>
-              <input type="text" id="allergy" name="allergy" class="input" size="40">
+              <span class="allergy_label span">※アレルギーをお持ちの方のみご記入ください</span>
+              <input type="text" id="allergy" name="allergy" class="input allergy" size="40">
               <hr class="line">
             </div>
           </div>
@@ -409,11 +409,10 @@
               <div class="form_item_title">
                 <p>お連れ様追加</p>
               </div>
-
-              <div class="form-Main_Value" id="l_family_member_form">
+              
+              <div class="add_family_area" id="add_family_area">
                 <input type="text" id="family_name" name="family_name" class="input" placeholder="お連れ様のお名前" size="40">
-                <input type="text" id="family_allergy" name="family_allergy" class="input" placeholder="アレルギー詳細"
-                  size="40">
+                <input type="text" id="family_allergy" name="family_allergy" class="input allergy" placeholder="アレルギー詳細" size="40">
                 <input type="button" value="お連れ様を追加する" id="add_family_button" />
               </div>
             </div>
@@ -423,24 +422,41 @@
             <div class="form_item">
               <div class="attendance_area">
                 <div class="attendance_item">
-                  <input checked="checked" type="radio" id="presence" name="ttendance" value="">
+                  <input checked="checked" type="radio" id="presence" name="attendance" value="">
                   <label for="presence">ご出席</label>
                 </div>
 
                 <div class="attendance_item">
-                  <input type="radio" id="absence" name="ttendance" value="">
+                  <input type="radio" id="absence" name="attendance" value="">
                   <label for="absence">ご欠席</label>
                 </div>
               </div>
             </div>
           </div>
 
-          <button type="submit" id="send">送信する</button>
+          <div>
+            <div class="form_item">
+              <p>披露宴終了後　博多駅周辺にて2次会を予定しておりますので　是非ご参加ください
+              </p>
+              <div class="afterparty_attendance_area">
+                <div class="afterparty_attendance_item">
+                  <input checked="checked" type="radio" id="afterparty_presence" name="afterparty_attendance" value="">
+                  <label for="afterparty_presence">ご出席</label>
+                </div>
+  
+                <div class="afterparty_attendance_item">
+                  <input type="radio" id="afterparty_absence" name="afterparty_attendance" value="">
+                  <label for="afterparty_absence">ご欠席</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" id="send" class="submit_button">送信する</button>
         </div>
       </div>
     </form>
   </main>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
 </html>

@@ -16,18 +16,18 @@ body {
     font-size: 20px;
   }
 }
-.movie_modalArea {
+.movie_modal_area {
   position: fixed;
   width: 100%;
   height: 100%;
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
 }
-.movie_modalArea .movie_modal {
+.movie_modal_area .movie_modal {
   width: 100%;
   height: 100%;
   background-color: rgba(30, 30, 30, 0.9);
 }
-.movie_modalArea .modalWrapper {
+.movie_modal_area .modalWrapper {
   background-color: #fff;
   border-radius: 10px;
   width: 70%;
@@ -41,17 +41,17 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-.movie_modalArea .modal_button {
+.movie_modal_area .modal_button {
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
 }
-.movie_modalArea .modal_button .no {
+.movie_modal_area .modal_button .no {
   color: red;
   margin-right: 50px;
 }
-.movie_modalArea .modal_button .ok {
+.movie_modal_area .modal_button .ok {
   color: blue;
 }
 
@@ -133,6 +133,13 @@ video {
   margin-bottom: 18px;
 }
 
+@media screen and (min-width: 480px) {
+  .message_area {
+    background-size: 100% auto;
+    line-height: 40px;
+    padding: 100px 20px;
+  }
+}
 .host_area {
   background-color: rgb(50, 38, 38);
   color: #fff;
@@ -306,7 +313,20 @@ video {
 
 @media screen and (min-width: 480px) {
   .attention_area {
+    background-size: 100% auto;
     line-height: 40px;
+    padding: 100px 20px;
+  }
+  .attention_area .attenntion_bg {
+    background-color: rgba(255, 255, 255, 0.465);
+    margin: 0 50px;
+  }
+  .attention_movie {
+    width: 70%;
+    margin: 50px auto 0;
+  }
+  .attention_movie iframe {
+    height: 400px;
   }
 }
 .presence_area {
@@ -400,6 +420,28 @@ video {
   display: inline-block;
   line-height: 90px;
 }
+.presence_area .form_area .form_item .afterparty_attendance_area {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.presence_area .form_area .submit_button {
+  background: rgba(0, 0, 0, 0);
+  border: 2px solid rgb(255, 99, 118);
+  border-radius: 10px;
+  color: rgb(255, 99, 118);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16pt;
+  margin: 20px 0;
+  text-align: center;
+  padding: 12px 12px;
+  width: 100%;
+}
+.presence_area .form_area .submit_button:hover {
+  color: rgb(255, 99, 118);
+  background: #ffffff;
+}
 
 @media screen and (min-width: 480px) {
   .presence_area {
@@ -411,42 +453,26 @@ video {
   }
   .presence_area .form_area {
     padding-top: 20px;
-    display: inline-block;
   }
-  .presence_area .form_area .form_item {
-    display: flex;
-    padding: 10px 0px;
+  .presence_area .form_area .form_item .form_item_title {
+    margin-bottom: 30px;
   }
-  .presence_area .form_area .form_item p {
-    width: 200px;
+  .presence_area .form_area .form_item .span {
+    font-size: 20px;
   }
-  .presence_area .form_area .form_item #firstName {
-    width: 100px;
+  .presence_area .form_area .form_item .allergy {
+    width: 80%;
   }
-  .presence_area .form_area .form_item #firstNameKana {
-    width: 100px;
+  .presence_area .form_area .form_item .add_family_area {
+    display: inline;
   }
-  .presence_area .form_area .form_item #lastName {
-    width: 100px;
+  .presence_area .form_area .form_item .attendance_area {
+    margin: 20px 0;
   }
-  .presence_area .form_area .form_item #lastNameKana {
-    width: 100px;
-  }
-  .presence_area .form_area .form_item #tel {
-    width: 200px;
-  }
-  .presence_area .form_area .form_item #address {
-    width: 400px;
-  }
-  .presence_area .form_area .form_item #email {
-    width: 300px;
-  }
-  .presence_area .form_area .form_item textarea {
-    width: 400px;
-    height: 200px;
-  }
-  .presence_area .form_area .form_item #guest_memo_allergy {
-    width: 400px;
+  .presence_area .form_area .form_item label {
+    margin: 0 20px;
+    font-size: 30px;
+    line-height: 100px;
   }
 }
 .scroll_up_title {

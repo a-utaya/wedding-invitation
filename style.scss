@@ -1,4 +1,3 @@
-// @import url('https://fonts.googleapis.com/css?family=Klee One');
 @import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&display=swap');
 
 * {
@@ -10,6 +9,7 @@ body {
   color: rgb(50, 50, 50);
   font-size: 14px;
   font-family: 'Klee One';
+  // position: fixed;
 }
 
 @media screen and (min-width:480px) {
@@ -18,7 +18,7 @@ body {
   }
 }
 
-.movie_modalArea {
+.movie_modal_area {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -147,6 +147,14 @@ video {
 
   p {
     margin-bottom: 18px;
+  }
+}
+
+@media screen and (min-width:480px) {
+  .message_area {
+    background-size:  100% auto;
+    line-height: 40px;
+    padding: 100px 20px;
   }
 }
 
@@ -360,13 +368,28 @@ video {
   iframe{
     display: block;
     height: 200px;
-
   }
 }
 
 @media screen and (min-width:480px) {
   .attention_area {
+    background-size: 100% auto ;
     line-height: 40px;
+    padding: 100px 20px;
+  
+    .attenntion_bg{
+      background-color: rgba(255, 255, 255, 0.465);
+      margin: 0  50px;
+    }
+  }
+  
+  .attention_movie{
+    width: 70%;
+    margin: 50px auto 0;
+  
+    iframe{
+      height: 400px;
+    }
   }
 }
 
@@ -390,7 +413,7 @@ video {
   .form_area {
     background-image: url("assets/images/tower.png");
     background-repeat: no-repeat;
-    background-size:100% auto;  
+    background-size: 100% auto;
     font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
     padding: 20px 20px;
     text-align: left;
@@ -483,10 +506,33 @@ video {
         display: inline-block;
         line-height: 90px;
       }
+
+      .afterparty_attendance_area{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+      }
+    }
+
+    .submit_button {
+      background: rgba(0, 0, 0, 0);  
+      border:2px solid rgb(255, 99, 118);
+      border-radius: 10px;
+      color: rgb(255, 99, 118);
+      cursor: pointer;
+      display: inline-block;
+      font-size: 16pt;
+      margin: 20px 0;
+      text-align: center;
+      padding: 12px 12px;
+      width: 100%;
+    }
+    
+    .submit_button:hover {
+      color         : rgb(255, 99, 118);
+      background    : #ffffff;
     }
   }
-
-  
 }
 
 @media screen and (min-width:480px) {
@@ -502,51 +548,32 @@ video {
 
     .form_area {
       padding-top: 20px;
-      display: inline-block;
 
-      .form_item {
-        display: flex;
-        padding: 10px 0px;
-
-        p {
-          width: 200px;
+      .form_item{
+        .form_item_title {
+          margin-bottom: 30px;
+        }
+  
+        .span{
+          font-size: 20px;
         }
 
-        #firstName {
-          width: 100px;
+        .allergy{
+          width: 80%;
         }
 
-        #firstNameKana {
-          width: 100px;
+        .add_family_area{
+          display: inline;
         }
 
-        #lastName {
-          width: 100px;
+        .attendance_area{
+          margin: 20px 0;
         }
 
-        #lastNameKana {
-          width: 100px;
-        }
-
-        #tel {
-          width: 200px;
-        }
-
-        #address {
-          width: 400px;
-        }
-
-        #email {
-          width: 300px;
-        }
-
-        textarea {
-          width: 400px;
-          height: 200px;
-        }
-
-        #guest_memo_allergy {
-          width: 400px;
+        label{
+          margin: 0 20px;
+          font-size: 30px;
+          line-height: 100px;
         }
       }
     }
