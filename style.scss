@@ -10,6 +10,7 @@ body {
   font-size: 14px;
   font-family: 'Klee One';
   // position: fixed;
+  overflow-y: hidden;
 }
 
 @media screen and (min-width:480px) {
@@ -23,13 +24,14 @@ body {
   width: 100%;
   height: 100%;
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  z-index: 10;
 
   .movie_modal {
     width: 100%;
     height: 100%;
-    background-color: rgba(30,30,30,0.9);
+    background-color: rgba(30, 30, 30, 0.9);
   }
-  
+
   .modalWrapper {
     background-color: #fff;
     border-radius: 10px;
@@ -41,22 +43,22 @@ body {
     top: 50%;
     left: 50%;
     line-height: 50px;
-    transform:translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     text-align: center;
   }
-  
-  .modal_button{
+
+  .modal_button {
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
 
-    .no{
+    .no {
       color: red;
       margin-right: 50px;
     }
 
-    .ok{
+    .ok {
       color: blue;
     }
   }
@@ -71,9 +73,9 @@ body {
   .modalBg {
     width: 100%;
     height: 100%;
-    background-color: rgba(30,30,30,0.9);
+    background-color: rgba(30, 30, 30, 0.9);
   }
-  
+
   .modalWrapper {
     background-color: #fff;
     border-radius: 10px;
@@ -85,22 +87,22 @@ body {
     top: 50%;
     left: 50%;
     line-height: 50px;
-    transform:translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     text-align: center;
   }
-  
-  .bgm_button{
+
+  .bgm_button {
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
 
-    .bgmNo{
+    .bgmNo {
       color: red;
       margin-right: 50px;
     }
 
-    .bgmOk{
+    .bgmOk {
       color: blue;
     }
   }
@@ -109,7 +111,7 @@ body {
 
 
 video {
-    width: 100%;
+  width: 100%;
 }
 
 .label {
@@ -139,7 +141,7 @@ video {
 .message_area {
   background-image: url("assets/images/pearl.jpeg");
   background-repeat: no-repeat;
-  background-size: auto 100% ;
+  background-size: auto 100%;
   font-family: 'Klee One';
   line-height: 22px;
   padding: 100px 0px;
@@ -152,7 +154,7 @@ video {
 
 @media screen and (min-width:480px) {
   .message_area {
-    background-size:  100% auto;
+    background-size: 100% auto;
     line-height: 40px;
     padding: 100px 20px;
   }
@@ -183,7 +185,7 @@ video {
   .host_area {
     line-height: 40px;
 
-    .host{
+    .host {
       .name {
         font-size: 32px;
         margin: 14px 0px 24px;
@@ -200,14 +202,14 @@ video {
       display: flex;
       justify-content: center;
 
-      .host{
+      .host {
         .name {
           font-size: 40px;
           margin: 16px 0px 30px;
         }
-        }
+      }
 
-      .host{
+      .host {
         .host_img {
           height: 300px;
         }
@@ -368,25 +370,25 @@ video {
 .attention_area {
   background-image: url("assets/images/attention_bg.jpg");
   background-repeat: no-repeat;
-  background-size: auto 100% ;
+  background-size: auto 100%;
   color: black;
   line-height: 24px;
   padding: 100px 0;
   text-align: center;
 
-  .attenntion_bg{
+  .attenntion_bg {
     background-color: rgba(255, 255, 255, 0.465);
     border-radius: 10px;
     padding: 50px 0;
-    margin: 0  20px;
+    margin: 0 20px;
   }
 }
 
-.attention_movie{
+.attention_movie {
   width: 90%;
   margin: 20px auto 0;
 
-  iframe{
+  iframe {
     display: block;
     height: 200px;
   }
@@ -394,21 +396,21 @@ video {
 
 @media screen and (min-width:480px) {
   .attention_area {
-    background-size: 100% auto ;
+    background-size: 100% auto;
     line-height: 40px;
     padding: 100px 20px;
-  
-    .attenntion_bg{
+
+    .attenntion_bg {
       background-color: rgba(255, 255, 255, 0.465);
-      margin: 0  50px;
+      margin: 0 50px;
     }
   }
-  
-  .attention_movie{
+
+  .attention_movie {
     width: 70%;
     margin: 50px auto 0;
-  
-    iframe{
+
+    iframe {
       height: 400px;
     }
   }
@@ -416,17 +418,17 @@ video {
 
 
 .presence_area {
-  background-color:	rgb(20,20,20);
+  background-color: rgb(20, 20, 20);
   color: #fff;
   line-height: 24px;
   text-align: center;
 
-  .presence_message_area{
+  .presence_message_area {
     padding: 100px 20px 0;
   }
 
-  .presence_message{
-    span{
+  .presence_message {
+    span {
       font-size: 16px;
     }
   }
@@ -443,83 +445,86 @@ video {
     .form_item {
       padding: 10px 0px;
 
-      input[type="radio"]{
-        display: none; /* ラジオボタンを非表示にする */
+      input[type="radio"] {
+        display: none;
+        /* ラジオボタンを非表示にする */
       }
 
 
-      .form_item_title{
+      .form_item_title {
         display: flex;
         margin-bottom: 10px;
 
-        p{
+        p {
           font-weight: bold;
         }
 
-        .required_label{
+        .required_label {
           background-color: rgb(255, 99, 118);
           padding: 0 4px;
           margin-left: 10px;
         }
       }
 
-      .line{
+      .line {
         margin-top: 20px;
       }
 
-      .radio{
+      .radio {
         accent-color: rgb(255, 99, 118);
         transform: scale(1.4);
       }
-  
-      .radio_label{
+
+      .radio_label {
         display: inline-block;
         font-size: 18px;
-        line-height: 20px;		/* ボタンのサイズに合わせる */
-        margin: 0 30px 0 8px;	/* ラベルの位置 */
+        line-height: 20px;
+        /* ボタンのサイズに合わせる */
+        margin: 0 30px 0 8px;
+        /* ラベルの位置 */
         position: relative;
       }
-  
-      .input{
-          border-radius: 6px;
-          height: 40px;
-          padding-left: 10px;
-        }
-  
+
+      .input {
+        border-radius: 6px;
+        height: 40px;
+        padding-left: 10px;
+      }
+
       p input {
         text-align: left;
       }
-  
-      span{
+
+      span {
         font-size: 12px;
       }
-  
-      textarea{
+
+      textarea {
         border-radius: 6px;
         width: 90%;
         padding: 10px;
       }
-  
-      .message_textarea{
+
+      .message_textarea {
         height: 60px;
       }
-  
-      .allergy_label{
+
+      .allergy_label {
         color: red;
       }
 
-      .attendance_area{
+      .attendance_area {
         display: flex;
         justify-content: center;
       }
-        
-      input[type="radio"]:checked + label {
+
+      input[type="radio"]:checked+label {
         border: 1px solid;
         border-radius: 50%;
         border-color: rgb(255, 99, 118);
       }
 
-      label{
+      label {
         margin: 0 10px;
         font-family: 'Klee One';
         font-size: 24px;
@@ -528,7 +533,7 @@ video {
         line-height: 90px;
       }
 
-      .afterparty_attendance_area{
+      .afterparty_attendance_area {
         display: flex;
         justify-content: center;
         margin-top: 10px;
@@ -536,8 +541,8 @@ video {
     }
 
     .submit_button {
-      background: rgba(0, 0, 0, 0);  
-      border:2px solid rgb(255, 99, 118);
+      background: rgba(0, 0, 0, 0);
+      border: 2px solid rgb(255, 99, 118);
       border-radius: 10px;
       color: rgb(255, 99, 118);
       cursor: pointer;
@@ -548,10 +553,10 @@ video {
       padding: 12px 12px;
       width: 100%;
     }
-    
+
     .submit_button:hover {
-      color         : rgb(255, 99, 118);
-      background    : #ffffff;
+      color: rgb(255, 99, 118);
+      background: #ffffff;
     }
   }
 }
@@ -561,8 +566,8 @@ video {
     line-height: 40px;
     padding: 100px 20px;
 
-    .presence_message{
-      span{
+    .presence_message {
+      span {
         font-size: 24px;
       }
     }
@@ -570,28 +575,28 @@ video {
     .form_area {
       padding-top: 20px;
 
-      .form_item{
+      .form_item {
         .form_item_title {
           margin-bottom: 30px;
         }
-  
-        .span{
+
+        .span {
           font-size: 20px;
         }
 
-        .allergy{
+        .allergy {
           width: 80%;
         }
 
-        .add_family_area{
+        .add_family_area {
           display: inline;
         }
 
-        .attendance_area{
+        .attendance_area {
           margin: 20px 0;
         }
 
-        label{
+        label {
           margin: 0 20px;
           font-size: 30px;
           line-height: 100px;
