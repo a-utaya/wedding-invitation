@@ -1,5 +1,5 @@
 /* bgm video 音量の初期設定（デフォルトは1） */
-const audio_volume=function(){
+const audio_volume = function () {
 
   const bgm = document.getElementById("bgm");
   bgm.volume = 0.1;
@@ -7,21 +7,23 @@ const audio_volume=function(){
   const movie = document.getElementById("movie");
   movie.volume = 1;
 }
-window.addEventListener('DOMContentLoaded' , function(){
-      audio_volume();
-}, false); 
+window.addEventListener('DOMContentLoaded', function () {
+  audio_volume();
+}, false);
 
 $(function () {
   $('#movie_modal_area').fadeIn();
 
-  $('#movie_ok').click(function(){
+  $('#movie_ok').click(function () {
     $('#movie_modal_area').fadeOut();
+    $('body').css('overflow-y', 'auto');
     document.getElementById("movie").play()
     document.getElementById("bgm").play()
   });
 
-  $('#movie_no').click(function(){
+  $('#movie_no').click(function () {
     $('#movie_modal_area').fadeOut();
+    $('body').css('overflow-y', 'auto');
   });
 });
 
