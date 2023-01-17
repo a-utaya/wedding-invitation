@@ -341,7 +341,16 @@ video {
     margin: 50px auto 0;
   }
   .attention_movie iframe {
-    height: 400px;
+    height: 300px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .attention_movie {
+    width: 70%;
+    margin: 50px auto 0;
+  }
+  .attention_movie iframe {
+    height: 450px;
   }
 }
 .presence_area {
